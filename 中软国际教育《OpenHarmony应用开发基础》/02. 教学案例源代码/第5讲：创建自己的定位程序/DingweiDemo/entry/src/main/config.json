@@ -1,0 +1,86 @@
+{
+  "app": {
+    "bundleName": "com.example.dingweidemo",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.dingweidemo",
+    "name": ".DingweiDemo",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:reason_description",
+        "usedScene": {
+          "ability": [
+            "com.example.dingweidemo.MainAbility",
+            "com.example.dingweidemo.MainAbility2"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+        "reason": "LOCATION",
+        "usedScene": {
+          "ability": [
+            "com.example.dingweidemo.MainAbility",
+            "com.example.dingweidemo.MainAbility2"
+          ],
+          "when": "inuse"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.example.dingweidemo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "DingweiDemo",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.example.dingweidemo.MainAbility2",
+        "icon": "$media:icon",
+        "description": "$string:mainability2_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

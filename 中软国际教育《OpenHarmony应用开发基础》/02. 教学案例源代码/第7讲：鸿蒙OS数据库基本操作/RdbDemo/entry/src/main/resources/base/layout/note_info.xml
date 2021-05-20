@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:background_element="#eeeeee"
+                   ohos:padding="5vp"
+                   ohos:orientation="vertical">
+
+    <DependentLayout
+            ohos:width="match_parent"
+            ohos:height="match_content">
+
+        <Text
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:align_parent_top="true"
+                ohos:text="标题"
+                ohos:text_alignment="center"
+                ohos:text_size="70"
+                ohos:id="$+id:title"
+                ohos:text_color="black"/>
+
+        <Button
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:align_parent_top="true"
+                ohos:text="返回"
+                ohos:padding="5vp"
+                ohos:text_alignment="center"
+                ohos:background_element="blue"
+                ohos:id="$+id:back"
+                ohos:align_parent_left="true"
+                ohos:text_size="50"
+                ohos:text_color="white"/>
+
+        <Button
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:align_parent_top="true"
+                ohos:text="修改"
+                ohos:padding="5vp"
+                ohos:text_alignment="center"
+                ohos:align_parent_right="right "
+                ohos:background_element="blue"
+                ohos:id="$+id:btn_modify"
+                ohos:text_size="50"
+                ohos:text_color="white"/>
+
+    </DependentLayout>
+
+    <Text
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:text="日期："
+            ohos:text_alignment="right"
+            ohos:top_margin="20vp"
+            ohos:bottom_margin="20vp"
+            ohos:text_size="30"
+            ohos:id="$+id:date"
+            ohos:text_color="black"/>
+
+    <Text
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:text="内容："
+            ohos:text_alignment="left"
+            ohos:background_element="white"
+            ohos:multiple_lines="true"
+            ohos:padding="10vp"
+            ohos:text_size="40"
+            ohos:id="$+id:content"
+            ohos:text_color="black"/>
+
+    <Button
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:text="删除便签"
+            ohos:padding="5vp"
+            ohos:margin="30vp"
+            ohos:text_alignment="center"
+            ohos:background_element="red"
+            ohos:id="$+id:deletenote"
+            ohos:text_size="50"
+            ohos:text_color="white"/>
+</DirectionalLayout>

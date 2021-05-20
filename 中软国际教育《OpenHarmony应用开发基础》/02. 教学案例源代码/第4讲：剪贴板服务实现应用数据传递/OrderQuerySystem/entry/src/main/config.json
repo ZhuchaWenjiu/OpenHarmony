@@ -1,0 +1,52 @@
+{
+  "app": {
+    "bundleName": "com.chinasofti.orderquerysystem",
+    "vendor": "chinasofti",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.chinasofti.orderquerysystem",
+    "name": ".OrderQuerySystem",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.chinasofti.orderquerysystem.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "OrderQuerySystem",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
