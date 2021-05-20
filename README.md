@@ -1,37 +1,14 @@
-# OpenHarmony
+# OpenHarmony开放教育资源仓
 
 #### 介绍
-开放原子OpenHarmony代码舱
+开放原子OpenHarmony开放教育资源（Open Education Resources）仓，提供了灵活的协作环境，参与OpenHarmony项目的开放教育贡献者可以与网络中的其他人组织、创建、共享和讨论和该项目相关的教育资源，与组成员协作，贡献文档、代码资源并将资源上传到资源舱进行共享。
 
-#### 软件架构
-软件架构说明
+#### 目标
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+- 成为OpenHarmony开源项目最大的共享技术文档、解决方案、最佳实践、实验手册资源池；
+- 为参与贡献的开发者提供文档提交和同伴评审的协作空间；
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+
