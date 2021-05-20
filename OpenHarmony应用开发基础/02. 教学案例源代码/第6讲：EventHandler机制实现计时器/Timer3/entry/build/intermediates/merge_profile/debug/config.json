@@ -1,0 +1,54 @@
+{
+    "app": {
+        "bundleName": "com.chinasofti.timer3",
+        "vendor": "chinasofti",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 3
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".Timer3",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "wearable"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.chinasofti.timer3.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "Timer3",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "package": "com.chinasofti.timer3"
+    }
+}

@@ -1,0 +1,8 @@
+graphic bg_element 0x1000003
+id b_button 0x1000005
+id t_time 0x1000006
+id t_title 0x1000007
+layout timer 0x1000004
+media icon 0x1000002
+string app_name 0x1000000
+string mainability_description 0x1000001

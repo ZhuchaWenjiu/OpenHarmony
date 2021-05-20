@@ -1,0 +1,4 @@
+"C:/Users/Administrator/DevEcoStudioProjects/MyApplication26/entry/build/intermediates/shell/src/main/java/com/example/myapplication/MainAbilityShellActivity.java"
+"C:/Users/Administrator/DevEcoStudioProjects/MyApplication26/entry/build/intermediates/shell/src/main/java/com/example/myapplication/ResultAbilityShellActivity.java"
+"C:/Users/Administrator/DevEcoStudioProjects/MyApplication26/entry/build/intermediates/shell/src/main/java/com/example/myapplication/ShellMyApplication.java"
+"C:/Users/Administrator/DevEcoStudioProjects/MyApplication26/entry/build/intermediates/shell/build/res/debug/r/com/example/myapplication/R.java"

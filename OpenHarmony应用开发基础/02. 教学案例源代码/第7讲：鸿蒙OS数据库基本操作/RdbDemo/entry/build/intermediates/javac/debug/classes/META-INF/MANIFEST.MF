@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: build_tools
+Main-Class: ohos.data.orm.processor.OrmProcessor
+

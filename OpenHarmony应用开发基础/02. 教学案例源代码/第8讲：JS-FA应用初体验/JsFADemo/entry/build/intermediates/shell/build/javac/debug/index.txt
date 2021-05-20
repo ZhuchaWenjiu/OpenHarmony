@@ -1,0 +1,3 @@
+"D:/DevEcoStudioProjects/JsFADemo/entry/build/intermediates/shell/src/main/java/com/example/jsfademo/MainAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/JsFADemo/entry/build/intermediates/shell/src/main/java/com/example/jsfademo/ShellJsFADemo.java"
+"D:/DevEcoStudioProjects/JsFADemo/entry/build/intermediates/shell/build/res/debug/r/com/example/jsfademo/R.java"

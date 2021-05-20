@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.pastedemo" android:versionCode="1" android:versionName="1.0">
+  <uses-feature android:name="zidane.software.ability" android:required="false"/>
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="29"/>
+  <application android:usesCleartextTraffic="false" android:icon="@drawable/icon" android:directBootAware="false" android:allowBackup="false" android:label="PasteDemo" android:process="com.example.pastedemo" android:name="com.example.pastedemo.ShellPasteDemo" android:persistent="false" android:debuggable="true">
+    <meta-data android:value="true" android:name="permZA"/>
+    <activity android:icon="@drawable/icon" android:label="PasteDemo" android:screenOrientation="landscape" android:name="com.example.pastedemo.MainAbilityShellActivity" android:launchMode="standard">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/icon" android:label="entry" android:screenOrientation="landscape" android:name="com.example.pastedemo.SecondAbilityShellActivity" android:launchMode="standard"/>
+  </application>
+</manifest>

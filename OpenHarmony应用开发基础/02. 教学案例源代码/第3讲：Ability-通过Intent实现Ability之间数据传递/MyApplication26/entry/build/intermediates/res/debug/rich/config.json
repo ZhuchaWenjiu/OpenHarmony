@@ -1,0 +1,77 @@
+{
+    "app" : 
+    {
+        "apiVersion" : 
+        {
+            "compatible" : 3,
+            "target" : 3
+        },
+        "bundleName" : "com.example.myapplication",
+        "vendor" : "example",
+        "version" : 
+        {
+            "code" : 1,
+            "name" : "1.0"
+        }
+    },
+    "deviceConfig" : {},
+    "module" : 
+    {
+        "abilities" : 
+        [
+            {
+                "description" : "$string:mainability_description",
+                "descriptionId" : 16777217,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777219,
+                "label" : "MyApplication",
+                "launchType" : "standard",
+                "name" : "com.example.myapplication.MainAbility",
+                "orientation" : "landscape",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action.system.home"
+                        ],
+                        "entities" : 
+                        [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "type" : "page"
+            },
+            {
+                "description" : "$string:resultability_description",
+                "descriptionId" : 16777218,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777219,
+                "label" : "entry",
+                "launchType" : "standard",
+                "name" : "com.example.myapplication.ResultAbility",
+                "orientation" : "landscape",
+                "type" : "page"
+            }
+        ],
+        "deviceType" : 
+        [
+            "tv"
+        ],
+        "distro" : 
+        {
+            "deliveryWithInstall" : true,
+            "moduleName" : "entry",
+            "moduleType" : "entry"
+        },
+        "name" : ".MyApplication",
+        "package" : "com.example.myapplication",
+        "reqCapabilities" : 
+        [
+            "video_support"
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: rt_java">
+    <CLASSES>
+      <root url="jar://D:/sdkRepo/java/3.0.0.80/api/rt_java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

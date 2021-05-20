@@ -1,0 +1,4 @@
+"D:/DevEcoStudioProjects/JsDemo/entry/build/intermediates/shell/src/main/java/com/example/jsdemo/MainAbility2ShellActivity.java"
+"D:/DevEcoStudioProjects/JsDemo/entry/build/intermediates/shell/src/main/java/com/example/jsdemo/MainAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/JsDemo/entry/build/intermediates/shell/src/main/java/com/example/jsdemo/ShellJsDemo.java"
+"D:/DevEcoStudioProjects/JsDemo/entry/build/intermediates/shell/build/res/debug/r/com/example/jsdemo/R.java"

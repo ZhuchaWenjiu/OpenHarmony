@@ -1,0 +1,4 @@
+"D:/DevEcoStudioProjects/DingweiDemo/entry/build/intermediates/shell/src/main/java/com/example/dingweidemo/MainAbility2ShellActivity.java"
+"D:/DevEcoStudioProjects/DingweiDemo/entry/build/intermediates/shell/src/main/java/com/example/dingweidemo/MainAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/DingweiDemo/entry/build/intermediates/shell/src/main/java/com/example/dingweidemo/ShellDingweiDemo.java"
+"D:/DevEcoStudioProjects/DingweiDemo/entry/build/intermediates/shell/build/res/debug/r/com/example/dingweidemo/R.java"

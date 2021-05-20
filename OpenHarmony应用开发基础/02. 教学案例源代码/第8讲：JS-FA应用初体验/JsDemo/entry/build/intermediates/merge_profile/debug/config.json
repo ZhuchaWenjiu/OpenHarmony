@@ -1,0 +1,84 @@
+{
+    "app": {
+        "bundleName": "com.example.jsdemo",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 3
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".JsDemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "tv"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.jsdemo.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "JsDemo",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "com.example.jsdemo.MainAbility2",
+                "description": "$string:mainability2_description",
+                "icon": "$media:icon",
+                "label": "entry",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard"
+            }
+        ],
+        "js": [
+            {
+                "name": "default",
+                "pages": [
+                    "pages/index/index"
+                ],
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": true
+                }
+            },
+            {
+                "name": "default2",
+                "pages": [
+                    "pages/index/index"
+                ],
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": true
+                }
+            }
+        ],
+        "package": "com.example.jsdemo"
+    }
+}

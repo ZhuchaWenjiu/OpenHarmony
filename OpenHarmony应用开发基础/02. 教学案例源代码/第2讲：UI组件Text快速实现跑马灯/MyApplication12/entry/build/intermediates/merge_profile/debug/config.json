@@ -1,0 +1,54 @@
+{
+    "app": {
+        "bundleName": "com.example.myapplication",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 3
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".MyApplication",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "wearable"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.myapplication.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "MyApplication",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "package": "com.example.myapplication"
+    }
+}

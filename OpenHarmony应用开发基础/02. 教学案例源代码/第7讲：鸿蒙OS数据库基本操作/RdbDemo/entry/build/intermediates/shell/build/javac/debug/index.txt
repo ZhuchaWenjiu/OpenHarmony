@@ -1,0 +1,6 @@
+"D:/DevEcoStudioProjects/RdbDemo/entry/build/intermediates/shell/src/main/java/com/example/rdbdemo/AddNoteAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/RdbDemo/entry/build/intermediates/shell/src/main/java/com/example/rdbdemo/MainAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/RdbDemo/entry/build/intermediates/shell/src/main/java/com/example/rdbdemo/ModifyNoteAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/RdbDemo/entry/build/intermediates/shell/src/main/java/com/example/rdbdemo/NoteInfoAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/RdbDemo/entry/build/intermediates/shell/src/main/java/com/example/rdbdemo/ShellRdbDemo.java"
+"D:/DevEcoStudioProjects/RdbDemo/entry/build/intermediates/shell/build/res/debug/r/com/example/rdbdemo/R.java"

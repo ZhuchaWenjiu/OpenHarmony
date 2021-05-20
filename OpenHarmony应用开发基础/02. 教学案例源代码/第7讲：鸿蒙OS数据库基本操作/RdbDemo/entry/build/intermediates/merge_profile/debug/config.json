@@ -1,0 +1,101 @@
+{
+    "app": {
+        "bundleName": "com.example.rdbdemo",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 3
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".RdbDemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "tv"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.rdbdemo.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "RdbDemo",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape",
+                "permissions": [
+                    
+                ],
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "com.example.rdbdemo.AddNoteAbility",
+                "description": "$string:addnoteability_description",
+                "icon": "$media:icon",
+                "label": "entry",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape",
+                "skills": [
+                    {
+                        "actions": [
+                            "action_add_content"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "com.example.rdbdemo.NoteInfoAbility",
+                "description": "$string:noteinfoability_description",
+                "icon": "$media:icon",
+                "label": "entry",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape"
+            },
+            {
+                "name": "com.example.rdbdemo.ModifyNoteAbility",
+                "description": "$string:modifynoteability_description",
+                "icon": "$media:icon",
+                "label": "entry",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape",
+                "skills": [
+                    {
+                        "actions": [
+                            "action_modify_content"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "package": "com.example.rdbdemo"
+    }
+}

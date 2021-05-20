@@ -1,0 +1,3 @@
+"D:/DevEcoStudioProjects/PasteDemo2/entry/build/intermediates/shell/src/main/java/com/example/pastedemo2/MainAbilityShellActivity.java"
+"D:/DevEcoStudioProjects/PasteDemo2/entry/build/intermediates/shell/src/main/java/com/example/pastedemo2/ShellPasteDemo2.java"
+"D:/DevEcoStudioProjects/PasteDemo2/entry/build/intermediates/shell/build/res/debug/r/com/example/pastedemo2/R.java"
