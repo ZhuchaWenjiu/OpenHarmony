@@ -1,0 +1,3 @@
+"C:/Users/Administrator/DevEcoStudioProjects/Timer3/entry/build/intermediates/shell/src/main/java/com/chinasofti/timer3/MainAbilityShellActivity.java"
+"C:/Users/Administrator/DevEcoStudioProjects/Timer3/entry/build/intermediates/shell/src/main/java/com/chinasofti/timer3/ShellTimer3.java"
+"C:/Users/Administrator/DevEcoStudioProjects/Timer3/entry/build/intermediates/shell/build/res/debug/r/com/chinasofti/timer3/R.java"

@@ -1,0 +1,120 @@
+{
+    "app" : 
+    {
+        "apiVersion" : 
+        {
+            "compatible" : 3,
+            "target" : 3
+        },
+        "bundleName" : "com.example.rdbdemo",
+        "vendor" : "example",
+        "version" : 
+        {
+            "code" : 1,
+            "name" : "1.0"
+        }
+    },
+    "deviceConfig" : {},
+    "module" : 
+    {
+        "abilities" : 
+        [
+            {
+                "description" : "$string:mainability_description",
+                "descriptionId" : 16777218,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777223,
+                "label" : "RdbDemo",
+                "launchType" : "standard",
+                "name" : "com.example.rdbdemo.MainAbility",
+                "orientation" : "landscape",
+                "permissions" : [],
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action.system.home"
+                        ],
+                        "entities" : 
+                        [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "type" : "page"
+            },
+            {
+                "description" : "$string:addnoteability_description",
+                "descriptionId" : 16777216,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777223,
+                "label" : "entry",
+                "launchType" : "standard",
+                "name" : "com.example.rdbdemo.AddNoteAbility",
+                "orientation" : "landscape",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action_add_content"
+                        ]
+                    }
+                ],
+                "type" : "page"
+            },
+            {
+                "description" : "$string:noteinfoability_description",
+                "descriptionId" : 16777220,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777223,
+                "label" : "entry",
+                "launchType" : "standard",
+                "name" : "com.example.rdbdemo.NoteInfoAbility",
+                "orientation" : "landscape",
+                "type" : "page"
+            },
+            {
+                "description" : "$string:modifynoteability_description",
+                "descriptionId" : 16777219,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777223,
+                "label" : "entry",
+                "launchType" : "standard",
+                "name" : "com.example.rdbdemo.ModifyNoteAbility",
+                "orientation" : "landscape",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action_modify_content"
+                        ]
+                    }
+                ],
+                "type" : "page"
+            }
+        ],
+        "deviceType" : 
+        [
+            "tv"
+        ],
+        "distro" : 
+        {
+            "deliveryWithInstall" : true,
+            "moduleName" : "entry",
+            "moduleType" : "entry"
+        },
+        "name" : ".RdbDemo",
+        "package" : "com.example.rdbdemo",
+        "reqCapabilities" : 
+        [
+            "video_support"
+        ]
+    }
+}

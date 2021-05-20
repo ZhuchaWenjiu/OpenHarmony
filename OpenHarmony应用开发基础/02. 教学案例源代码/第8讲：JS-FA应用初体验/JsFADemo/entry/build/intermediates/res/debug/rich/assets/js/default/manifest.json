@@ -1,0 +1,14 @@
+{
+    "appID": "com.example.jsfademo",
+    "appName": "JsFADemo",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "minPlatformVersion": 3,
+    "pages": [
+        "pages/index/index"
+    ],
+    "window": {
+        "designWidth": 720,
+        "autoDesignWidth": false
+    }
+}

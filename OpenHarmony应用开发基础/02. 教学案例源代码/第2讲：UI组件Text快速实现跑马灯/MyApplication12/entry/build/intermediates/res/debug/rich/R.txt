@@ -1,0 +1,5 @@
+id title 0x1000004
+layout layout 0x1000003
+media icon 0x1000002
+string app_name 0x1000000
+string mainability_description 0x1000001

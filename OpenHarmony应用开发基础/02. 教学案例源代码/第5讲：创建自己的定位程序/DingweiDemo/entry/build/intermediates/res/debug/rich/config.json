@@ -1,0 +1,106 @@
+{
+    "app" : 
+    {
+        "apiVersion" : 
+        {
+            "compatible" : 3,
+            "target" : 3
+        },
+        "bundleName" : "com.example.dingweidemo",
+        "vendor" : "example",
+        "version" : 
+        {
+            "code" : 1,
+            "name" : "1.0"
+        }
+    },
+    "deviceConfig" : {},
+    "module" : 
+    {
+        "abilities" : 
+        [
+            {
+                "description" : "$string:mainability_description",
+                "descriptionId" : 16777218,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777219,
+                "label" : "DingweiDemo",
+                "launchType" : "standard",
+                "name" : "com.example.dingweidemo.MainAbility",
+                "orientation" : "landscape",
+                "type" : "page"
+            },
+            {
+                "description" : "$string:mainability2_description",
+                "descriptionId" : 16777217,
+                "formEnabled" : false,
+                "icon" : "$media:icon",
+                "iconId" : 16777219,
+                "label" : "entry",
+                "launchType" : "standard",
+                "name" : "com.example.dingweidemo.MainAbility2",
+                "orientation" : "landscape",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action.system.home"
+                        ],
+                        "entities" : 
+                        [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "type" : "page"
+            }
+        ],
+        "deviceType" : 
+        [
+            "wearable"
+        ],
+        "distro" : 
+        {
+            "deliveryWithInstall" : true,
+            "moduleName" : "entry",
+            "moduleType" : "entry"
+        },
+        "name" : ".DingweiDemo",
+        "package" : "com.example.dingweidemo",
+        "reqCapabilities" : 
+        [
+            "video_support"
+        ],
+        "reqPermissions" : 
+        [
+            {
+                "name" : "ohos.permission.LOCATION",
+                "reason" : "$string:reason_description",
+                "usedScene" : 
+                {
+                    "ability" : 
+                    [
+                        "com.example.dingweidemo.MainAbility",
+                        "com.example.dingweidemo.MainAbility2"
+                    ],
+                    "when" : "inuse"
+                }
+            },
+            {
+                "name" : "ohos.permission.LOCATION_IN_BACKGROUND",
+                "reason" : "LOCATION",
+                "usedScene" : 
+                {
+                    "ability" : 
+                    [
+                        "com.example.dingweidemo.MainAbility",
+                        "com.example.dingweidemo.MainAbility2"
+                    ],
+                    "when" : "inuse"
+                }
+            }
+        ]
+    }
+}

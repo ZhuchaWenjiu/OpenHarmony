@@ -1,0 +1,64 @@
+{
+    "app": {
+        "bundleName": "com.example.pastedemo",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 3
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".PasteDemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "tv"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.pastedemo.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "PasteDemo",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "com.example.pastedemo.SecondAbility",
+                "description": "$string:secondability_description",
+                "icon": "$media:icon",
+                "label": "entry",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "orientation": "landscape"
+            }
+        ],
+        "package": "com.example.pastedemo"
+    }
+}

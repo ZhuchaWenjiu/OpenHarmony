@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: orm_annotations_processor_java">
+    <CLASSES>
+      <root url="jar://D:/sdkRepo/java/3.0.0.80/build-tools/lib/orm_annotations_processor_java.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

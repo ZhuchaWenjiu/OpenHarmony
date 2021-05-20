@@ -1,0 +1,14 @@
+{
+    "appID": "com.example.jsdemo",
+    "appName": "entry",
+    "versionName": "1.0",
+    "versionCode": 1,
+    "minPlatformVersion": 3,
+    "pages": [
+        "pages/like/index"
+    ],
+    "window": {
+        "designWidth": 720,
+        "autoDesignWidth": true
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "app": {
+        "bundleName": "com.example.jsfademo",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 3
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        "default": {
+            "debug": true
+        }
+    },
+    "module": {
+        "name": ".JsFADemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "tv"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.jsfademo.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "JsFADemo",
+                "type": "page",
+                "formEnabled": false,
+                "launchType": "standard",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "iconId": 16777218,
+                "descriptionId": 16777217
+            }
+        ],
+        "js": [
+            {
+                "name": "default",
+                "pages": [
+                    "pages/index/index"
+                ],
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": false
+                }
+            }
+        ],
+        "package": "com.example.jsfademo"
+    }
+}

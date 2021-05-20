@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ohos_ivi">
+    <CLASSES>
+      <root url="jar://D:/sdkRepo/java/3.0.0.80/api/car/ohos_ivi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
