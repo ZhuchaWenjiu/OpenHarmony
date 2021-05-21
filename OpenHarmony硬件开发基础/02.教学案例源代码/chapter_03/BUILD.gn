@@ -1,0 +1,15 @@
+static_library("chapter_03_demo") {
+    sources = [
+        # "led_demo.c",
+        # "traffic_light_demo.c",
+        #   "beeper_demo.c",
+       "beeper_music_demo.c",
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}
+
