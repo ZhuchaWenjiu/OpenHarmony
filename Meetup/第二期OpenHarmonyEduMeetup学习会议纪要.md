@@ -22,6 +22,7 @@
 ### （一）主题：OpenHarmony北向教育相关资源和计划——主讲人：中科院软件所郑森文
 
 1. OpenHarmony开源组件库
+
 （1）OpenHarmony开源组件库项目库
 （2）OpenHarmony组件库使用和技术讲解专栏
 
