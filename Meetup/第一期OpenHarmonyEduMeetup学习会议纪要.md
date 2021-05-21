@@ -1,5 +1,3 @@
-# 第一期OpenHarmony Edu Meetup学习会议纪要
-
 ## 一、会议主题：
 
 第一期OpenHarmony Edu Meetup学习
