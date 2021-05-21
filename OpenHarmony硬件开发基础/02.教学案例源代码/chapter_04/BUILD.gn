@@ -1,0 +1,15 @@
+
+static_library("sensing_demo") {
+    sources = [
+        # "aht20_demo.c","aht20.c",
+        # "mq2_demo.c"
+    #    "oled_demo.c", "oled_ssd1306.c",
+         "enrionment_demo.c", "oled_ssd1306.c", "aht20.c"
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}
