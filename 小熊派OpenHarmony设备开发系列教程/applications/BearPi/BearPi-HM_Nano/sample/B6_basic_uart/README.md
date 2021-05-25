@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板基础外设开发——UART数据读写
 本示例将演示如何在BearPi-HM_Nano开发板上使用UART进行数据的收发
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## UART API分析
 本示例主要使用了以下API完成UART数据读写
 ## UartInit()
@@ -58,7 +58,7 @@ int UartRead (WifiIotUartIdx id, unsigned char * data, unsigned int dataLen )
 ## 硬件设计
 本案例将用 BearPi-HM_Nano 开发板 E53 接口的 UART 作为测试，如原理图所示第 18 和 19 脚分别为 TXD 和 RXD ，连接了主控芯片的 GPIO_6 和 GPIO_5 ，所以在编写软件的时候需要将 GPIO_6 和 GPIO_5 分别复用为 TXD 和 RXD 。
 
-![](/applications/BearPi/BearPi-HM_Nano/docs/figures/B6_basic_uart/E53接口电路.png "E53接口电路")
+![](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/B6_basic_uart/E53接口电路.png "E53接口电路")
 
 ## 软件设计
 

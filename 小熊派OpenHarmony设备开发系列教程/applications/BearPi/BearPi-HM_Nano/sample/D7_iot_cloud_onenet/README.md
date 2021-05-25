@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板WiFi编程开发——MQTT连接OneNet
 本示例将演示如何在BearPi-HM_Nano开发板上使用MQTT协议连接OneNet，使用的是E53_IA1 智慧农业扩展板与 BearPi-HM_Nano 开发板。
 
-![](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/E53_IA1安装.png "E53_IA1安装")
+![](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/E53_IA1安装.png "E53_IA1安装")
 # OneNET API
 
 ## 初始化
@@ -233,15 +233,15 @@ dp = onenet_get_dp_by_start_end("temperature",1531983000，50，10);
 
 通过左边栏产品导航进入 **多协议接入**
 
-![onenet](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/多协议接入.png)
+![onenet](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/多协议接入.png)
 
 ### 创建产品
 
 点击右上角的 添加产品，在弹出页面中按照提示填写产品的基本信息，进行产品创建；请您按照提示尽可能完整、全面地填写相应内容，这样更方便您后期对产品进行管理接入协议选择 `MQTT` 协议，如下图所示：
 
-![onenet](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加产品.png)
+![onenet](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加产品.png)
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/产品配置.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/产品配置.png)
 
 
 
@@ -249,26 +249,26 @@ dp = onenet_get_dp_by_start_end("temperature",1531983000，50，10);
 
 点击产品列表中产品信息，进入产品详情
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/产品列表.png)
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/产品详情.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/产品列表.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/产品详情.png)
 
 点击左侧 **设备列表**，进入设备列表，点击右侧 **添加设备**
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加设备.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加设备.png)
 编辑设备名称 与 设备描述，点击 **添加**，完成添加设备
 
 - 其中，设备名称为用户自定义设备唯一识别码，该产品下唯一
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加设备信息.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加设备信息.png)
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/完成添加设备.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/完成添加设备.png)
 
 #### 添加设备API KEY
 
 点击设备右侧的详情，进入设备详情页面，点击 添加APIKey，输入自定义的APIKey完成添加。
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加APIKEY.png)
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/点击添加APIKEY.png)
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/输入APIKEY.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/添加APIKEY.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/点击添加APIKEY.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/输入APIKEY.png)
 
 
 
@@ -282,7 +282,7 @@ dp = onenet_get_dp_by_start_end("temperature",1531983000，50，10);
 #define ONENET_INFO_PROID "383575"
 #define ONENET_MASTER_APIKEY "GNQeLPioqBVpndus2KABmdOVZZI="
 ```
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/查看产品对接信息.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/查看产品对接信息.png)
 
 `ONENET_INFO_DEVID`修改为设备ID;`ONENET_INFO_AUTH`修改为鉴权信息;`ONENET_INFO_APIKEY`修改为APIKey。
 ```C
@@ -290,7 +290,7 @@ dp = onenet_get_dp_by_start_end("temperature",1531983000，50，10);
 #define ONENET_INFO_AUTH "2020123456789"
 #define ONENET_INFO_APIKEY "JHr7UCOXy2tbHkHqWTSwIlU3NzQ="
 ```
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/查看设备对接信息.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/查看设备对接信息.png)
 
 `Wifi_SSID`修改为Wifi热点名称;`Wifi_PASSWORD`修改为Wifi热点密码。
 ```c
@@ -346,10 +346,10 @@ dp = onenet_get_dp_by_start_end("temperature",1531983000，50，10);
 ```
 点击平台设备右侧的数据流，查看上报上来的数据。
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/点击数据流.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/点击数据流.png)
 
 
-![onenet_create_product](/applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/查看数据流.png)
+![onenet_create_product](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D7_iot_cloud_onenet/查看数据流.png)
 
 
 

@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板基础外设开发——GPIO输出
 本示例将演示如何在BearPi-HM_Nano开发板上使用GPIO输出功能去点亮LED灯。
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 
 ## GPIO API分析
 本案例主要使用了以下几个API完成GPIO输出功能
@@ -46,7 +46,7 @@ unsigned int GpioSetDir (WifiIotGpioIdx id, WifiIotGpioDir dir )
 ## 硬件设计
 本案例将使用板载的LED来验证GPIO的输出功能，在BearPi-HM_Nano开发板上LED的连接电路图如下图所示，LED的控制引脚与主控芯片的GPIO_2连接，所以需要编写软件去控制GPIO_2输出高低电平实现LED灯的亮灭。
 
-![LED灯电路](/applications/BearPi/BearPi-HM_Nano/docs/figures/B1_basic_led_blink/LED灯电路.png )
+![LED灯电路](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/B1_basic_led_blink/LED灯电路.png )
 
 ## 软件设计
 

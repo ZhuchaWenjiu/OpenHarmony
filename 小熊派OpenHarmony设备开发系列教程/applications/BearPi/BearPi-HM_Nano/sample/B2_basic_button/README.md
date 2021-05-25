@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板基础外设开发——GPIO输入
 本示例将演示如何在BearPi-HM_Nano开发板上使用GPIO输入功能去读取按键状态
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## GPIO API分析
 本案例主要使用了以下几个API完成GPIO输出功能
 ## GpioInit()
@@ -80,7 +80,7 @@ unsigned int GpioRegisterIsrFunc (WifiIotGpioIdx id, WifiIotGpioIntType intType,
 ## 硬件设计
 本案例将使用板载的两个用户按键来验证GPIO的输入功能，在BearPi-HM_Nano开发板上用户按键的连接电路图如下图所示，按键F1的检测引脚与主控芯片的GPIO_11连接，按键F2的检测引脚与主控芯片的GPIO_12连接，所以需要编写软件去读取GPIO_11和GPIO_12的电平值，判断按键是否被按下。
 
-![](/applications/BearPi/BearPi-HM_Nano/docs/figures/B2_basic_button/按键电路.png "按键电路")
+![](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/B2_basic_button/按键电路.png "按键电路")
 
 ## 软件设计
 

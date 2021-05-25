@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板基础外设开发——ADC采样
 本示例将演示如何在BearPi-HM_Nano开发板上通过按下按键改变GPIO口的电压，并使用ADC读取GPIO的电压值，
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## ADC API分析
 本案例主要使用了以下API完成ADC采样的功能
 ## AdcRead()
@@ -28,7 +28,7 @@ unsigned int AdcRead (WifiIotAdcChannelIndex channel, unsigned short * data, Wif
 ## 硬件设计
 本案例将使用板载用户按键F1来模拟GPIO口电压的变化。通过查看芯片手册可知GPIO_11对应的是 ADC Channel 5 ,所以需要编写软件去读取ADC Channel 5的电压,程序设计时先将GPIO_11上拉，使GPIO_11的电压一直处于高电平，当按键按下时GPIO_11接地，此时GPIO_11的电压变为 0 V。
 
-![](/applications/BearPi/BearPi-HM_Nano/docs/figures/B4_basic_adc/按键电路.png "按键电路")
+![](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/B4_basic_adc/按键电路.png "按键电路")
 
 ## 软件设计
 

@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板鸿蒙OS内核编程开发——消息队列
 本示例将演示如何在BearPi-HM_Nano开发板上使用cmsis 2.0 接口通过消息队列进行线程之间交换消息
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## MessageQueue API分析
 
 

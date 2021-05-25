@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板WiFi编程开发——UDP客户端
 本示例将演示如何在BearPi-HM_Nano开发板上使用socket编程创建UDP客户端，就收客户端消息并回复固定消息。
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## socket API分析
 本案例主要使用了以下几个API完socket编程实验
 ## socket()
@@ -117,7 +117,7 @@ static void UDPClientTask(void)
 
 使用 Socket tool 创建UDP服务端用于测试。
 
-![创建UDP服务端](/applications/BearPi/BearPi-HM_Nano/docs/figures/D3_iot_udp_client/创建UDP服务端.png)
+![创建UDP服务端](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D3_iot_udp_client/创建UDP服务端.png)
 
 示例代码编译烧录代码后，按下开发板的RESET按键，在数据发送窗口输入要发送的数据，点击发送后开发板会回复固定消息，且开发板收到消息后会通过日志打印出来。
 
@@ -125,4 +125,4 @@ static void UDPClientTask(void)
 192.168.0.175:8888=>Hello! BearPi-HM_nano UDP Client!
 ```
 
-![UDP发送数据](/applications/BearPi/BearPi-HM_Nano/docs/figures/D3_iot_udp_client/UDP发送数据.png)
+![UDP发送数据](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D3_iot_udp_client/UDP发送数据.png)

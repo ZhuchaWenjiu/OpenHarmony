@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板鸿蒙OS内核编程开发——信号量
 本示例将演示如何在BearPi-HM_Nano开发板上使用cmsis 2.0 接口通过信号量同时从不同的线程访问共享资源
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## Semaphore API分析
 
 ## osSemaphoreNew()

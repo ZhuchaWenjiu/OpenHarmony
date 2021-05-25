@@ -7,7 +7,7 @@ BearPi-HM_Nano开发板是一块专门为鸿蒙OS设计的鸿蒙OS开发板，�
 ### 购买地址 [点击购买](https://item.taobao.com/item.htm?id=633296694816)
 ### 视频教程地址 [点击观看](https://space.bilibili.com/470797387/channel/detail?cid=161760)
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/quick-start/figures/BearPi-HM_Nano功能图.png)
+![BearPi-HM_Nano](figures/BearPi-HM_Nano功能图.png)
 
 
 

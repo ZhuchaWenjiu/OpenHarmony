@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板基础外设开发——I2C控制NFC芯片
 本示例将演示如何在BearPi-HM_Nano开发板上使用I2C协议向NFC芯片写入数据
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## I2C API分析
 本示例主要使用了以下API完成I2C采样的功能
 ## I2cInit()
@@ -75,7 +75,7 @@ unsigned int I2cRead (WifiIotI2cIdx id, unsigned short deviceAddr, const WifiIot
 ## 硬件设计
 如下图所示，NFC芯片使用的是I2C协议，I2C_SCL与GPIO_0相连接，I2C_SDA与GPIO_1相连接，所以需要编写软件使用GPIO_0和GPIO_1产生I2C信号去控制NFC芯片
 
-![](/applications/BearPi/BearPi-HM_Nano/docs/figures/B5_basic_i2c_nfc/NFC电路.png "E53接口电路")
+![](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/B5_basic_i2c_nfc/NFC电路.png "E53接口电路")
 
 ## 软件设计
 

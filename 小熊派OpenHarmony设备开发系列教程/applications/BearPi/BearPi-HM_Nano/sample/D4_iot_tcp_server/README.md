@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板WiFi编程开发——TCP服务器
 本示例将演示如何在BearPi-HM_Nano开发板上使用socket编程创建TCP服务端，接收客户端消息并回复固定消息。
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## socket API分析
 本案例主要使用了以下几个API完socket编程实验
 ## socket()
@@ -205,7 +205,7 @@ start accept
 ```
 使用 Socket tool 创建客户端用于测试。
 
-![创建TCP_Clien](/applications/BearPi/BearPi-HM_Nano/docs/figures/D4_iot_tcp_server/创建TCP_Clien.png)
+![创建TCP_Clien](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D4_iot_tcp_server/创建TCP_Clien.png)
 
 在创建客户端后点击“连接”，在数据发送窗口输入要发送的数据，点击发送后服务端会回复固定消息，且开发板收到消息后会通过日志打印出来。
 
@@ -215,4 +215,4 @@ accept addr
 recv :Hello! BearPi-HM_nano TCP Server!
 ```
 
-![TCP发送数据](/applications/BearPi/BearPi-HM_Nano/docs/figures/D4_iot_tcp_server/TCP发送数据.png)
+![TCP发送数据](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/D4_iot_tcp_server/TCP发送数据.png)

@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板基础外设开发——PWM输出
 本示例将演示如何在BearPi-HM_Nano开发板上使用GPIO的PWM功能实现呼吸灯的效果
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## PWM API分析
 本案例主要使用了以下几个API完成PWM功能实现呼吸灯功能
 ## GpioInit()
@@ -77,7 +77,7 @@ unsigned int PwmStart (WifiIotPwmPort port, unsigned short duty, unsigned short 
 ## 硬件设计
 本案例将使用板载的LED来验证GPIO的PWM功能，在BearPi-HM_Nano开发板上LED的连接电路图如下图所示，LED的控制引脚与主控芯片的GPIO_2连接，所以需要编写软件去控制GPIO_2输出PWM波实现呼吸灯的效果。
 
-![](/applications/BearPi/BearPi-HM_Nano/docs/figures/B3_basic_pwm_led/LED灯电路.png "LED灯电路")
+![](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/B3_basic_pwm_led/LED灯电路.png "LED灯电路")
 
 ## 软件设计
 

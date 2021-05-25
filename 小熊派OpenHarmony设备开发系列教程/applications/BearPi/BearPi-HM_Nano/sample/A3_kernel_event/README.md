@@ -1,7 +1,7 @@
 # BearPi-HM_Nano开发板鸿蒙OS内核编程开发——事件标志
 本示例将演示如何在BearPi-HM_Nano开发板上使用cmsis 2.0 接口使用事件标志同步线程
 
-![BearPi-HM_Nano](/applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
+![BearPi-HM_Nano](../../../../../applications/BearPi/BearPi-HM_Nano/docs/figures/00_public/BearPi-HM_Nano.png)
 ## EventFlags API分析
 
 
