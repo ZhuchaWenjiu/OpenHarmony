@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "jltfmoban8"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Image Editor Feature Ability"
+    },
+    {
+      "name": "title_appBar",
+      "value": "Edit"
+    },
+    {
+      "name": "brightness",
+      "value": "Brightness"
+    },
+    {
+      "name": "contrast",
+      "value": "Contrast"
+    },
+    {
+      "name": "saturation",
+      "value": "Saturation"
+    },
+    {
+      "name": "exit_title",
+      "value": "Discard changes?"
+    },
+    {
+      "name": "exit_cancel",
+      "value": "CANCEL"
+    },
+    {
+      "name": "exit_discard",
+      "value": "DISCARD"
+    },
+    {
+      "name": "size",
+      "value": "Size"
+    },
+    {
+      "name": "crop",
+      "value": "Crop"
+    },
+    {
+      "name": "adjust",
+      "value": "Adjust"
+    }
+  ]
+}

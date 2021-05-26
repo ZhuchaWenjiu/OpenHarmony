@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b45d004-eb92-4a9f-8687-82eec099e395" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1n6752puauH0wrnKoWtFGoSIPo3" />
+  <component name="PropertiesComponent">
+    <property name="device.picker.selection" value="127.0.0.1:18888" />
+    <property name="last_opened_file_path" value="F:/jltf_yunApp" />
+    <property name="project.ide.version" value="2.1.0.201" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ohos.template.packageName">
+      <recent name="com.example.myapplication_tongqu" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.myapplication_tongqu.my" />
+      <recent name="com.example.myapplication_tongqu.kefu" />
+      <recent name="com.example.myapplication_tongqu.shezhi" />
+      <recent name="com.example.myapplication_tongqu.shop" />
+      <recent name="com.example.myapplication_tongqu.login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Huawei\MyApplication_tongqu\entry\src\main\resources\base\layout" />
+      <recent name="F:\Huawei\MyApplication_tongqu\entry\src\main\java\com\example\myapplication_tongqu" />
+      <recent name="F:\Huawei\MyApplication_tongqu\entry\src\main\resources\base\media" />
+      <recent name="F:\Huawei\MyApplication_tongqu\entry\src\main\resources\base\graphic" />
+      <recent name="E:\HUAWEI\Jltt_App\MyApplication_tongqu\entry\src\main\resources\base\media" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="entry" type="OhosDebugTask" factoryName="HarmonyOS App" activateToolWindowBeforeRun="false">
+      <module name="entry" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto />
+      <Dual />
+      <DualJs />
+      <Java />
+      <Js />
+      <Native />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <DEPLOY_MULTI_HAP>false</DEPLOY_MULTI_HAP>
+      <method v="2">
+        <option name="Ohos.Build.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b45d004-eb92-4a9f-8687-82eec099e395" name="Default Changelist" comment="" />
+      <created>1610698499339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610698499339</updated>
+    </task>
+    <servers />
+  </component>
+</project>

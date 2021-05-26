@@ -1,0 +1,14 @@
+<div class="container">
+    <text onclick="onTextClick" class="title-text">菜单栏1</text>
+    <menu id="apiMenu" onselected="onMenuSelected">
+        <option value="页面 1">页面1</option>
+        <option value="页面 2">页面2</option>
+        <option value="页面 3">页面3</option>
+    </menu>
+    <text onclick="onTextClick_Two" class="title-text">菜单栏2</text>
+    <menu id="apiMenu_Two" onselected="onMenu_Two">
+        <option value="页面 4">页面4</option>
+        <option value="页面 5">页面5</option>
+        <option value="页面 6">页面6</option>
+    </menu>
+</div>

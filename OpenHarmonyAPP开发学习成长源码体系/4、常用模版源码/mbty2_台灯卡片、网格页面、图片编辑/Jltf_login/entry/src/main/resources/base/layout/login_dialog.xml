@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:background_element="$graphic:login_dialog_bg"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:dialog_text"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_padding="$float:defaultPadding"
+        ohos:end_padding="$float:maxPadding"
+        ohos:multiple_lines="true"
+        ohos:start_padding="$float:maxPadding"
+        ohos:text_alignment="center"
+        ohos:text_color="#ffffff"
+        ohos:text_size="$float:appbar_title_text_size"
+        ohos:top_margin="$float:maxMargin"/>
+
+    <Text
+        ohos:id="$+id:dialog_sub_text"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:bottom_margin="$float:defaultMargin"
+        ohos:bottom_padding="$float:defaultPadding"
+        ohos:end_padding="$float:maxPadding"
+        ohos:multiple_lines="true"
+        ohos:start_padding="$float:maxPadding"
+        ohos:text_alignment="center"
+        ohos:text_color="#ffffff"
+        ohos:text_size="$float:default_text_size"
+        ohos:top_margin="$float:maxMargin"/>
+</DirectionalLayout>

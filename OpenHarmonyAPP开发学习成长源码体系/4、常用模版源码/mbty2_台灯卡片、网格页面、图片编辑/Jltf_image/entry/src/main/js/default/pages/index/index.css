@@ -1,0 +1,92 @@
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/**
+ * app bar
+ */
+
+.app-bar {
+    height: 56px;
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app-bar-content {
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 30px;
+    opacity: 0.9;
+}
+
+
+/**
+ * refresh result show
+ */
+
+.refresh-result-outer {
+    height: 40px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+    background-color: #FFFFFF;
+}
+
+.refresh-result-inner {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.result {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 14px;
+}
+
+/**
+ * animation for hidding refresh results
+ */
+
+.hide-result {
+    animation-name: hideResult;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes hideResult {
+    from {
+        height: 40px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+/**
+ * content show
+ */
+
+.content-show {
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

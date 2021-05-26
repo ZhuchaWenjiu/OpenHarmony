@@ -1,0 +1,9 @@
+<element name="item" src="../item/item.hml"></element>
+<div class="progress-bar"
+     style="opacity : {{ progressData.alpha }}; background-color : {{ progressData.backgroundColor }};">
+    <div class="item">
+        <item itemdata="{{ progressData.leftItem }}"></item>
+    </div>
+    <slider class="slider" onchange="valueChange()" value="{{ progressData.operationValue }}"
+            max="{{ progressData.max }}" min="{{ progressData.min }}" disabled="{{ progressData.disable }}"></slider>
+</div>

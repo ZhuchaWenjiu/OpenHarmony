@@ -1,0 +1,10 @@
+<div class="container" style="height : {{ enumListData.height }}">
+    <div for="{{ rowItems in enumListData.items }}" class="enum-container">
+        <div for="{{ item in rowItems }}" class="row-container">
+            <div class="item-container" onclick="onChange(item)">
+                <image class="item-icon" src="{{ item.icon }}"/>
+                <text class="item-text">{{ item.name }}</text>
+            </div>
+        </div>
+    </div>
+</div>

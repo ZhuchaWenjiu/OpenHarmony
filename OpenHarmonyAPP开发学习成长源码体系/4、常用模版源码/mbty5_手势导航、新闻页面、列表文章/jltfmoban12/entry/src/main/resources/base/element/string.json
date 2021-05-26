@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "jltfmoban12"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Profile Picture List Ability"
+    },
+    {
+      "name": "title_text",
+      "value": "Title"
+    },
+    {
+      "name": "title_item_description",
+      "value": "Title Button"
+    },
+    {
+      "name": "top_first_item_description",
+      "value": "First Button"
+    },
+    {
+      "name": "top_second_item_description",
+      "value": "Second Button"
+    },
+    {
+      "name": "top_third_item_description",
+      "value": "Third Button"
+    },
+    {
+      "name": "Double_line_list_item",
+      "value": "Double-line list item"
+    },
+    {
+      "name": "Auxiliary_text",
+      "value": "Auxiliary text"
+    },
+    {
+      "name": "Right_text",
+      "value": "Right text"
+    },
+    {
+      "name": "Operation1",
+      "value": "Operation1"
+    },
+    {
+      "name": "Operation2",
+      "value": "Operation2"
+    },
+    {
+      "name": "Operation3",
+      "value": "Operation3"
+    },
+    {
+      "name": "Operation4",
+      "value": "Operation4"
+    },
+    {
+      "name": "Operation5",
+      "value": "Operation5"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+/* xxx.css */
+.div-button {
+    flex-direction: column;
+    align-items: center;
+}
+.button {
+    margin-top: 15px;
+}
+.button:waiting {
+    width: 280px;
+}
+.circle {
+    background-color: #007dff;
+    radius: 72px;
+    icon-width: 72px;
+    icon-height: 72px;
+}
+.text {
+    text-color: red;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-style: normal;
+}
+.download {
+    width: 280px;
+    text-color: white;
+    background-color: #007dff;
+}

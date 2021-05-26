@@ -1,0 +1,18 @@
+<div class="pagediv">
+    <div class="topdiv">
+        <text class="textdiv" for="{{title}}">{{$item}}</text>
+    </div>
+    <div class="middlediv">
+        <block for="{{arrs}}">
+            <div class="box">
+                <button class="button_dj" onclick="show({{$item.id}})" >{{$item.id}}</button>
+            </div>
+        </block>
+    </div>
+    <div class="div_dati">
+        <text class="text_style">{{show_text}}</text>
+    </div>
+    <div class="button_study">
+        <text class="button_style_study" onclick="page_four">{{know_study}}</text>
+    </div>
+</div>

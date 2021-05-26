@@ -1,0 +1,159 @@
+<div class="container">
+    <list class="leftview">
+        <block for="{{specilties}}">
+            <list-item class="{{currentIndex==$idx?'listitem1':'listitem'}}" onclick="changeview({{$idx}})">
+                <text class="txt1">{{$item.cname}}</text>
+            </list-item>
+        </block>
+    </list>
+    <div class="rightview">
+        <swiper id="swiperview" vertical="true" index="0" indicator="false" onchange="changeswiper">
+        <!--年货买不断start-->
+            <div class="box one">
+                <list class="list1">
+                    <block for="{{first}}">
+                        <list-item class="listitem2">
+                            <image class="img1" src="{{$item.cimg}}"></image>
+                            <div class="txt3">
+                                <text class="tex1">{{$item.cname}}</text>
+                                <div class="txt4">
+                                    <image class="img4" src="common/qian.png"></image>
+                                    <text class="txt2">{{$item.price}}</text>
+                                </div>
+                            </div>
+                            <image class="img2" src="common/jiahao.png" ></image>
+                        </list-item>
+                    </block>
+
+                </list>
+            </div>
+        <!---年货买不断end-->
+        <!---张飞牛肉start-->
+            <div class="box two">
+                <list class="list1">
+                    <block for="{{second}}">
+                        <list-item class="listitem2">
+                            <image class="img1" src="{{$item.cimg}}"></image>
+                            <div class="txt3">
+                                <text class="tex1">{{$item.cname}}</text>
+                                <div class="txt4">
+                                    <image class="img4" src="common/qian.png"></image>
+                                    <text class="txt2">{{$item.price}}</text>
+                                </div>
+                            </div>
+                            <image class="img2" src="common/jiahao.png" ></image>
+                        </list-item>
+                    </block>
+                </list>
+            </div>
+        <!---张飞牛肉end-->
+        <!---兔子start-->
+            <div class="box three">
+                <list class="list2">
+                    <block for="{{third}}">
+                        <list-item-group class="group">
+                            <list-item class="listitem3">
+                                <image class="img5" src="{{$item.cimg}}"></image>
+                            </list-item>
+                            <block for="{{(cindex,cvalue) in $item.lname}}">
+                                <list-item class="listitem4">
+                                    <image class="img6" src="{{cvalue.icon}}"></image>
+                                    <text class="txt6">{{cvalue.fname}}</text>
+                                    <image class="img7" src="{{cvalue.icon1}}"></image>
+                                </list-item>
+                            </block>
+                        </list-item-group>
+                    </block>
+                </list>
+            </div>
+        <!---兔子end-->
+        <!---鸭子start-->
+            <div class="box four">
+                <list class="list1">
+                    <block for="{{forth}}">
+                        <list-item class="listitem2">
+                            <image class="img1" src="{{$item.cimg}}"></image>
+                            <div class="txt3">
+                                <text class="tex1">{{$item.cname}}</text>
+                                <div class="txt4">
+                                    <image class="img4" src="common/qian.png"></image>
+                                    <text class="txt2">{{$item.price}}</text>
+                                </div>
+                            </div>
+                            <image class="img2" src="common/jiahao.png" ></image>
+                        </list-item>
+                    </block>
+                </list>
+            </div>
+            <div class="box five">
+            </div>
+            <div class="box six">
+            </div>
+        <!--五粮液start-->
+            <div class="wuliangye">
+            <!--轮播start-->
+                <swiper class="sswiper" autoplay="true" duration="3000" indicator="true" >
+                    <div class="view1">
+                        <image class="img8" src="common/wu6.jpg"></image>
+                    </div>
+                    <div class="view1">
+                        <image class="img8" src="common/wu7.jpg"></image>
+                    </div>
+                    <div class="view1">
+                        <image class="img8" src="common/wu8.jpg"></image>
+                    </div>
+                </swiper>
+            <!--轮播end-->
+                <list class="list7">
+                    <block for="{{seventh}}">
+                        <list-item class="listitem7">
+                            <image class="img9" src="{{$item.cimg}}"></image>
+                        </list-item>
+                    </block>
+                </list>
+            </div>
+        <!--五粮液end-->
+        <!--泸州老窖start-->
+            <div class="box eight">
+                <div class="line1">
+                    <image class="img10" src="common/lu1.jpg"></image>
+                </div>
+                <div class="line1">
+                    <image class="img10" src="common/lu2.jpg"></image>
+                </div>
+                <div class="line1">
+                    <image class="img10" src="common/lu3.jpg"></image>
+                </div>
+                <div class="line1">
+                    <image class="img10" src="common/lu4.jpg"></image>
+                </div>
+                <div class="line1">
+                    <image class="img10" src="common/lu5.jpg"></image>
+                </div>
+            </div>
+        <!--泸州老窖end-->
+            <div class="box nine">
+            </div>
+        <!--火锅start-->
+            <div class="box ten">
+                <list class="list2">
+                    <block for="{{eleventh}}">
+                        <list-item-group class="group">
+                            <list-item class="listitem3">
+                                <image class="img10" src="{{$item.cimg}}"></image>
+                            </list-item>
+                            <block for="{{(cindex,cvalue) in $item.lname}}">
+                                <list-item class="listitem4">
+                                    <image class="img6" src="{{cvalue.icon}}"></image>
+                                    <text class="txt6">{{cvalue.fname}}</text>
+                                    <image class="img7" src="{{cvalue.icon1}}"></image>
+                                </list-item>
+                            </block>
+                        </list-item-group>
+                    </block>
+                </list>
+            </div>
+        <!--火锅end-->
+        </swiper>
+    </div>
+</div>

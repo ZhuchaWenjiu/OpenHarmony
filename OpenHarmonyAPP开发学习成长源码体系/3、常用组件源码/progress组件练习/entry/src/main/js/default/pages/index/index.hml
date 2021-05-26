@@ -1,0 +1,6 @@
+<div class="container">
+    <progress class="min-progress" type="scale-ring"  percent= "10" secondarypercent="50"></progress>
+    <progress class="min-progress" type="horizontal" percent= "10" secondarypercent="50"></progress>
+    <progress class="min-progress" type="arc" percent= "10"></progress>
+    <progress class="min-progress" type="ring" percent= "10" secondarypercent="50"></progress>
+</div>

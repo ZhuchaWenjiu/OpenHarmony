@@ -1,0 +1,25 @@
+/* music album 0*/
+.image-description-outer {
+    width: 33.34%;
+    flex-direction: column;
+}
+
+.image-description-inner {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-show {
+    height: 108px;
+    width: 99px;
+}
+
+.music-main-text {
+    font-size: 13px;
+    justify-content: flex-start;
+}
+
+.music-auxiliary-text {
+    font-size: 10px;
+    justify-content: flex-start;
+}

@@ -1,0 +1,38 @@
+.container {
+    border-radius: 16px;
+    margin: 4px;
+}
+
+.high-enum-bar {
+    flex-direction: column;
+    height: 192px;
+}
+
+.divider {
+    height: 36px;
+    border-color: #000000;
+    opacity: 0.2;
+    border-width: 0.3px;
+}
+
+.row-container {
+    flex-direction: row;
+}
+
+.high-item-container {
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+}
+
+.low-enum-bar {
+    flex-direction: column;
+    height: 96px;
+    display: flex;
+}
+
+.low-item-container {
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}

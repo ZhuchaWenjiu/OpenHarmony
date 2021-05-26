@@ -1,0 +1,17 @@
+<div class="box_interest">
+    <div class="harder_interest">
+        <text class="title_interest">
+            {{title_interest}}
+        </text>
+    </div>
+    <div class="center_interest">
+        <div for="{{neirong_interest}}" class="block_interest">
+            <div class="text_box_interest">
+                <text class="boxtxt_interest">{{$item}}</text>
+            </div>
+        </div>
+    </div>
+    <div class="button_interest">
+        <text class="button_style_interest" onclick="page_three">{{know_interest}}</text>
+    </div>
+</div>

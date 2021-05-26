@@ -1,0 +1,65 @@
+{
+  "app": {
+    "bundleName": "com.example.zhishidian",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.zhishidian",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone",
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.zhishidian.MainAbility",
+        "icon": "$media:zhishi_log",
+        "description": "$string:mainability_description",
+        "label": "解锁学习",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/tupian/tupian",
+          "pages/index/index",
+          "pages/interest/interest",
+          "pages/study/study",
+          "pages/harmonyos/harmonyos"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}
