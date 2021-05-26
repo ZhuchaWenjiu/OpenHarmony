@@ -1,0 +1,14 @@
+[
+    {
+        "hapPath": "entry-debug-unsigned.hap",
+        "device": "phone"
+    },
+    {
+        "hapPath": "entry-debug-unsigned.hap",
+        "device": "tv"
+    },
+    {
+        "hapPath": "entry-debug-unsigned.hap",
+        "device": "tablet"
+    }
+]

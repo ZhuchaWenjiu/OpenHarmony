@@ -1,0 +1,21 @@
+{
+  "strings": {
+    "app_bar": {
+      "title": "Title"
+    },
+    "refresh_bar": {
+      "refreshSucceed": "{count} new items updated",
+      "refreshFailed": "Refresh failed"
+    },
+    "content_bar": {
+      "mainText": "Single line text",
+      "auxiliaryText": "Auxiliary text"
+    }
+  },
+  "color": {
+    "refresh_bar": {
+      "refreshSucceed": "#0A59F7",
+      "refreshFailed": "#E84026"
+    }
+  }
+}

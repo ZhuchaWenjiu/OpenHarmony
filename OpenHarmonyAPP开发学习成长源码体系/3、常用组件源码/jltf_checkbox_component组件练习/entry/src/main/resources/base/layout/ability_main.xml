@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:left_padding="40px"
+    ohos:top_padding="40vp">
+
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="18fp"
+            ohos:text="下面哪个是水果?（多选）"/>
+
+
+        <Text
+            ohos:id="$+id:jltftext_answer"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:left_margin="20vp"
+            ohos:text_size="20fp"
+            ohos:text_color="#FF3333"
+            ohos:text="[]" />
+    </DirectionalLayout>
+
+
+    <Checkbox
+        ohos:id="$+id:jltfcheck_box_1"
+        ohos:top_margin="40vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="A 苹果"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+
+    <Checkbox
+        ohos:id="$+id:jltfcheck_box_2"
+        ohos:top_margin="40vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="B 香蕉"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+
+    <Checkbox
+        ohos:id="$+id:jltfcheck_box_3"
+        ohos:top_margin="40vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="C 草莓"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000" />
+
+
+    <Checkbox
+        ohos:id="$+id:jltfcheck_box_4"
+        ohos:top_margin="40vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="D 土豆"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="black" />
+</DirectionalLayout>

@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "ic_advertise",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "textColor_tertiary_inverse",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "color_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "copyright_text_color",
+      "value": "#99000000"
+    },
+    {
+      "name": "app_title_text_color",
+      "value": "#000000"
+    },
+    {
+      "name": "image_area",
+      "value": "#DCDCDC"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="200px"
+        ohos:width="match_parent"
+        >
+        <Text
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:text="申请成功"
+            ohos:text_color="#ffffff"
+            ohos:text_size="28fp"
+            ohos:text_weight="700px"
+            ohos:background_element="red"
+            ohos:text_alignment="center"/>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:height="1000px"
+        ohos:width="match_parent"
+        >
+        <Text
+            ohos:height="200px"
+            ohos:width="match_parent"
+            ohos:text="敬候佳音"
+            ohos:text_size="28fp"
+            ohos:text_alignment="center"
+            />
+        <Text
+            ohos:height="200px"
+            ohos:width="match_parent"
+            ohos:text="我们会尽快与您联系"
+            ohos:text_size="28fp"
+            ohos:text_alignment="center"
+            />
+
+    </DirectionalLayout>
+</DirectionalLayout>

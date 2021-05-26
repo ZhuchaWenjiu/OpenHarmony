@@ -1,0 +1,10 @@
+<div class="image-description-outer" style="align-items : {{ imageDescriptionPosition }}">
+    <div class="image-description-inner">
+        <image class="image-show" src="{{ imagePath }}">
+        </image>
+        <text class="music-main-text"> {{ mainText }}
+        </text>
+        <text class="music-auxiliary-text"> {{ auxiliaryText }}
+        </text>
+    </div>
+</div>

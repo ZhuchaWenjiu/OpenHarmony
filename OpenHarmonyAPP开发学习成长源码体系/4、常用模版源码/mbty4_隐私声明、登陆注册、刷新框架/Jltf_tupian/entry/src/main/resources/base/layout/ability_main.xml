@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:mainability_layout"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text_helloWorld"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_element"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:hello"
+        ohos:text_size="$float:hello"/>
+
+</DirectionalLayout>

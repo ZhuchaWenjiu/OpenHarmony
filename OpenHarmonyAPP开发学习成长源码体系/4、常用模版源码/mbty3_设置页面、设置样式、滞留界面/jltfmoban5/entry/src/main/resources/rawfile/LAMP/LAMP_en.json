@@ -1,0 +1,231 @@
+{
+  "devName": "lamp",
+  "devType": "0",
+  "prodId": "LAMP",
+  "templateUIInfo": [
+    {
+      "gravity": "default",
+      "heightType": "default",
+      "name": "power",
+      "span": 1,
+      "command": [
+        {
+          "characteristic": "on",
+          "reversal": [
+            {
+              "disableIcon": "/ic_power_nor.png",
+              "icon": "/ic_on.png",
+              "disableIconNight": "/ic_power_nor_dark.png",
+              "iconNight": "/ic_on_dark.png",
+              "value": 1
+            },
+            {
+              "disable": {
+                "name": [
+                  "model",
+                  "brightness"
+                ]
+              },
+              "disableIcon": "/ic_power_nor.png",
+              "icon": "/ic_off.png",
+              "disableIconNight": "/ic_power_nor_dark.png",
+              "iconNight": "/ic_off_dark.png",
+              "value": 0
+            }
+          ],
+          "sid": "switch"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {},
+          "upLeft": {
+            "description": {
+              "path": "switch/on",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "close"
+                },
+                {
+                  "scope": "1",
+                  "target": "open"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${switch/on}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "centerDivider",
+      "heightType": "default",
+      "name": "model",
+      "span": 1,
+      "command": [
+        {
+          "characteristic": "mode",
+          "enumInfo": [
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "lightMode/mode",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_read_nor.png",
+                      "scope": "-",
+                      "target": "/ic_read_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_read_nor_dark.png",
+                      "scope": "-",
+                      "target": "/ic_read_on_dark.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "reading"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 2
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "lightMode/mode",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_write_nor.png",
+                      "scope": "-",
+                      "target": "/ic_write_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_write_nor_dark.png",
+                      "scope": "-",
+                      "target": "/ic_write_on_dark.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "writing"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 3
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "lightMode/mode",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_computer_nor.png",
+                      "scope": "-",
+                      "target": "/ic_computer_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_computer_nor_dark.png",
+                      "scope": "-",
+                      "target": "/ic_computer_on_dark.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "computer"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 4
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "lightMode/mode",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_favorite_nor.png",
+                      "scope": "-",
+                      "target": "/ic_favorite_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_favorite_nor_dark.png",
+                      "scope": "-",
+                      "target": "/ic_favorite_on_dark.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "favorite"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 5
+            }
+          ],
+          "sid": "lightMode"
+        }
+      ],
+      "uiType": "ENUM"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "brightness",
+      "span": 1,
+      "command": [
+        {
+          "characteristic": "brightness",
+          "defaultValue": 100,
+          "max": 255,
+          "min": 0,
+          "radio": 1,
+          "sid": "brightness"
+        }
+      ],
+      "displayItemLeft": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "brightness/brightness",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "ratio": "0.392156",
+            "type": "dynamicText",
+            "value": "${brightness/brightness}%"
+          },
+          "upLeft": {
+            "type": "normalText",
+            "value": "brightness"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "PROGRESS"
+    }
+  ],
+  "version": "0.1"
+}

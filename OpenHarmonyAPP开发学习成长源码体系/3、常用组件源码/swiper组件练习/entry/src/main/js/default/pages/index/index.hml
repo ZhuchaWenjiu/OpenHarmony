@@ -1,0 +1,16 @@
+<div class="container">
+    <swiper class="swiper" id="swiper" index="0" indicator="true" loop="true" digital="false">
+        <div class = "swiperContent" >
+            <text class = "text">第一页</text>
+        </div>
+        <div class = "swiperContent">
+            <text class = "text">第二页</text>
+        </div>
+        <div class = "swiperContent">
+            <text class = "text">第三页</text>
+        </div>
+    </swiper>
+    <input class="button" type="button" value="跳转最后一页" onclick="swipeTo"></input>
+    <input class="button" type="button" value="展示下一页" onclick="showNext"></input>
+    <input class="button" type="button" value="展示上一页" onclick="showPrevious"></input>
+</div>

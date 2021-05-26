@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "蛟龙腾飞"
+    },
+    {
+      "name": "advertise",
+      "value": "广告"
+    },
+    {
+      "name": "copyright",
+      "value": "一个提供学习的平台"
+    },
+    {
+      "name": "hello",
+      "value": "欢迎来到术语大学习"
+    },
+    {
+      "name": "skip",
+      "value": "跳过"
+    }
+  ]
+}

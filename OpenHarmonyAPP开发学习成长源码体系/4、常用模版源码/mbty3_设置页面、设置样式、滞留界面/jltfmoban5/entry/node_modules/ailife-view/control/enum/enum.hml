@@ -1,0 +1,25 @@
+<element name="item" src="../item/item.hml"></element>
+<div class="container" style="opacity : {{ enumData.alpha }}; background-color : {{ enumData.backgroundColor }};">
+    <div if="{{ enumData.enumItemList.length <= 4 }}" class="low-enum-bar">
+        <div class="row-container">
+            <div class="low-item-container" for="{{ enumData.enumItemList }}">
+                <div if="{{ $idx != 0 && ! enumData.defaultGravity }}" class="divider"></div>
+                <item itemdata="{{ $item }}"></item>
+            </div>
+        </div>
+    </div>
+    <div if="{{ enumData.enumItemList.length > 4 }}" class="high-enum-bar">
+        <div class="row-container">
+            <div class="high-item-container" for="{{ enumData.enumItemList.slice(0, 4) }}">
+                <div if="{{ $idx != 0 && ! enumData.defaultGravity }}" class="divider"></div>=
+                <item itemdata="{{ $item }}"></item>=
+            </div>
+        </div>
+        <div class="row-container">
+            <div class="high-item-container" for="{{ enumData.enumItemList.slice(4, enumData.enumItemList.length) }}">
+                <div if="{{ $idx != 0 && ! enumData.defaultGravity }}" class="divider"></div>
+                <item itemdata="{{ $item }}"></item>
+            </div>
+        </div>
+    </div>
+</div>

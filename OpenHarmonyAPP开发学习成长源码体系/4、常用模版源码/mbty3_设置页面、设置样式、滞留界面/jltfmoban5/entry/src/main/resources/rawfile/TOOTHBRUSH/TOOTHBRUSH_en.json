@@ -1,0 +1,150 @@
+{
+  "devName": "Smart toothbrush",
+  "devType": "073",
+  "prodId": "20YV",
+  "block": "60",
+  "templateUIInfo": [
+    {
+      "gravity": "default",
+      "heightType": "default",
+      "name": "Battery power",
+      "span": 1,
+      "uiList": [
+        {
+          "subType": "text",
+          "textDisplay": {
+            "down": {
+            },
+            "upLeft": {
+              "description": {
+                "path": "bluetoothConnectStatus/bluetoothConnectStatus",
+                "value": [
+                  {
+                    "scope": "0",
+                    "target": "Not connected"
+                  },
+                  {
+                    "scope": "1",
+                    "target": "Connected"
+                  }
+                ]
+              },
+              "type": "dynamicText",
+              "value": "${bluetoothConnectStatus/bluetoothConnectStatus}"
+            },
+            "upRight": {
+            }
+          }
+        },
+        {
+          "icon": {
+            "path": "infoDisplay/battery",
+            "value": [
+              {
+                "defaultTarget": "/battery_30_default.png",
+                "disableTarget": "/battery_30_default.png",
+                "scope": "0-30",
+                "target": "/battery_30_default.png"
+              },
+              {
+                "defaultTarget": "/battery_50_default.png",
+                "disableTarget": "/battery_50_default.png",
+                "scope": "30-50",
+                "target": "/battery_50_default.png"
+              },
+              {
+                "defaultTarget": "/battery_80_default.png",
+                "disableTarget": "/battery_80_default.png",
+                "scope": "50-90",
+                "target": "/battery_80_default.png"
+              },
+              {
+                "defaultTarget": "/battery_100_default.png",
+                "disableTarget": "/battery_100_default.png",
+                "scope": "100",
+                "target": "/battery_100_default.png"
+              }
+            ],
+            "valueNight": [
+              {
+                "defaultTarget": "/battery_30_default.png",
+                "disableTarget": "/battery_30_default.png",
+                "scope": "0-30",
+                "target": "/battery_30_default.png"
+              },
+              {
+                "defaultTarget": "/battery_50_default.png",
+                "disableTarget": "/battery_50_default.png",
+                "scope": "30-50",
+                "target": "/battery_50_default.png"
+              },
+              {
+                "defaultTarget": "/battery_80_default.png",
+                "disableTarget": "/battery_80_default.png",
+                "scope": "50-90",
+                "target": "/battery_80_default.png"
+              },
+              {
+                "defaultTarget": "/battery_100_default.png",
+                "disableTarget": "/battery_100_default.png",
+                "scope": "100",
+                "target": "/battery_100_default.png"
+              }
+            ]
+          },
+          "iconText": {
+            "type": "dynamicText",
+            "value": "${infoDisplay/battery}%",
+            "range": "100-0"
+          },
+          "subType": "iconTextHorizontal"
+        }
+      ],
+      "uiType": "DISPLAY"
+    },
+    {
+      "gravity": "centerDivider",
+      "heightType": "default",
+      "name": "Score",
+      "span": 1,
+      "uiList": [
+        {
+          "subType": "text",
+          "textDisplay": {
+            "down": {
+              "type": "normalText",
+              "value": "Last brushing score"
+            },
+            "upLeft": {
+              "type": "dynamicText",
+              "value": "${brushingHistory/score}"
+            },
+            "upRight": {
+              "type": "normalText",
+              "value": "points"
+            }
+          }
+        },
+        {
+          "subType": "text",
+          "textDisplay": {
+            "down": {
+              "type": "normalText",
+              "value": "Brush head available"
+            },
+            "upLeft": {
+              "type": "dynamicText",
+              "value": "${brushDay/brushDay}"
+            },
+            "upRight": {
+              "type": "normalText",
+              "value": "days"
+            }
+          }
+        }
+      ],
+      "uiType": "DISPLAY"
+    }
+  ],
+  "version": "0.1"
+}

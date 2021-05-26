@@ -1,0 +1,74 @@
+{
+  "app": {
+    "bundleName": "com.example.jltfshujuku",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.jltfshujuku",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.jltfshujuku.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "jltfshujuku",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "visible": true,
+        "permissions": [
+                 "com.example.jltfshujuku.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.jltfshujuku.PersonDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:persondataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.jltfshujuku.PersonDataAbility"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.example.jltfshujuku.PersonDataAbility",
+        "grantMode": "system_grant",
+        "availableScope": [
+          "signature"
+        ]
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "com.example.jltfshujuku.PersonDataAbility"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<div class="container" style="height : {{ radioListData.height }}">
+    <list>
+        <list-item for="{{ item in radioListData.items }}">
+            <div class="list-item">
+                <text class="item-name font-55ST">{{ item.name }}</text>
+                <input name="radio" value="{{ item.value }}" type="radio" class="item-icon" onchange="onChange()">
+                </input>
+            </div>
+        </list-item>
+    </list>
+</div>

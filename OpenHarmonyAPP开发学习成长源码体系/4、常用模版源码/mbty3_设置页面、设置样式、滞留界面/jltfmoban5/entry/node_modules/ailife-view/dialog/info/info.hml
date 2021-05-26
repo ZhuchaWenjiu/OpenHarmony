@@ -1,0 +1,5 @@
+<div class="container">
+    <image class="icon" src="{{ infoData.icon }}"/>
+    <text class="headline">{{ infoData.headline }}</text>
+    <text class="desc">{{ infoData.desc }}</text>
+</div>

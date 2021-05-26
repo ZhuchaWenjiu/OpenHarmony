@@ -1,0 +1,32 @@
+.container {
+    flex-direction: column;
+}
+
+.enum-container {
+    align-items: center;
+    height: 106px;
+}
+
+.row-container {
+    flex-direction: row;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.item-container {
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.item-text {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}

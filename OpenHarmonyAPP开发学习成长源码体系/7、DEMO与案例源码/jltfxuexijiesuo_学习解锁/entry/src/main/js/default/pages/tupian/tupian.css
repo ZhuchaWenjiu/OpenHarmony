@@ -1,0 +1,42 @@
+/* phone */
+@media screen and (device-type: phone) {
+    .container {
+        width: 100%;
+        height: 100%;
+        background-image: url("/image/zhishi.jpg");
+        background-position: center;
+        background-size: 900px 2000px;
+    }
+   .liaojie{
+       text-color: red;
+       background-color: yellow;
+       width: 45%;
+       height: 100px;
+       text-align: center;
+       font-size: 42px;
+       border-radius: 45px;
+       font-weight: 700;
+       margin:900px 0px 0px 200px;
+   }
+}
+/*TV*/
+@media screen and (device-type: tv){
+    .container {
+        width: 100%;
+        height: 100%;
+        background-image: url("/image/zhishi.jpg");
+        background-position: center;
+        background-size: 900px 2000px;
+    }
+    .liaojie{
+        text-color: red;
+        background-color: yellow;
+        width: 45%;
+        height: 50px;
+        text-align: center;
+        font-size: 42px;
+        border-radius: 45px;
+        font-weight: 400;
+        margin: 300px 0px 0px 200px;
+    }
+}
