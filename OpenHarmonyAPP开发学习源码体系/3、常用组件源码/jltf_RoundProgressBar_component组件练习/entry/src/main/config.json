@@ -1,0 +1,49 @@
+{
+  "app": {
+    "bundleName": "com.example.roundprogressbar",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta2"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.roundprogressbar",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.roundprogressbar.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "RoundProgressBar",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

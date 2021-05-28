@@ -1,0 +1,17 @@
+<element name="item" src="../item/item.hml"></element>
+<div class="increase-decrease-bar"
+     style="opacity : {{ increasedecreaseData.alpha }}; background-color : {{ increasedecreaseData.backgroundColor }};">
+    <image class="decrease-image" src="{{ increasedecreaseData.iconDecrease }}"
+           ontouchstart="onTouchStart(false)"
+           ontouchmove="onTouchMove(false)"
+           ontouchcancel="onTouchEnd(false)"
+           ontouchend="onTouchEnd(false)"></image>
+    <div class="center-item">
+        <item itemdata="{{ increasedecreaseData.item }}"></item>
+    </div>
+    <image class="increase-image" src="{{ increasedecreaseData.iconIncrease }}"
+           ontouchstart="onTouchStart(true)"
+           ontouchmove="onTouchMove(true)"
+           ontouchcancel="onTouchEnd(true)"
+           ontouchend="onTouchEnd(true)"></image>
+</div>

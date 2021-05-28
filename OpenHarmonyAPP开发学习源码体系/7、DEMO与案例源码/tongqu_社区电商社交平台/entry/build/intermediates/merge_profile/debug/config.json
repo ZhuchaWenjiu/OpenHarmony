@@ -1,0 +1,53 @@
+{
+    "app": {
+        "bundleName": "com.example.myapplication_tongqu",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 4,
+            "releaseType": "Beta1"
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".MyApplication",
+        "deviceType": [
+            "phone",
+            "tv",
+            "tablet"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.myapplication_tongqu.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:tongqulog",
+                "label": "\u540c\u533a",
+                "type": "page",
+                "launchType": "standard",
+                "orientation": "unspecified",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "package": "com.example.myapplication_tongqu"
+    }
+}

@@ -1,0 +1,22 @@
+<div class = "container">
+    <stepper class="stepper" id="mystepper" index="0"  onnext="nextclick" onback="backclick">
+        <stepper-item class ="stepperItem" label="{{label_1}}">
+            <div class = "stepperItemContent" >
+                <text class = "text">第一页</text>
+            </div>
+            <button type="capsule" class ="button" value="按钮一" onclick="setRightButton"></button>
+        </stepper-item>
+        <stepper-item class ="stepperItem" label="{{label_2}}">
+            <div class = "stepperItemContent" >
+                <text class = "text">第二页</text>
+            </div>
+            <button type="capsule" class ="button" value="按钮二" onclick="setRightButton"></button>
+        </stepper-item>
+        <stepper-item class ="stepperItem" label="{{label_3}}">
+            <div class = "stepperItemContent" >
+                <text class = "text">第三页</text>
+            </div>
+            <button type="capsule" class ="button" value="按钮三" onclick="setRightButton"></button>
+        </stepper-item>
+    </stepper>
+</div>

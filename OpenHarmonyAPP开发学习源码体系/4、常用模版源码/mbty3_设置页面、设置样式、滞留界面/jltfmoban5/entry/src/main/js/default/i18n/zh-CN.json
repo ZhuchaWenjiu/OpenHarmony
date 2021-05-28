@@ -1,0 +1,17 @@
+{
+  "strings": {
+    "hello": "您好",
+    "world": "世界",
+    "view_more": "查看更多",
+    "more": "展开更多",
+    "pack_up": "收起",
+    "loading": "加载中",
+    "pleaseChoose": "请选择",
+    "prompt": "温馨提示",
+    "useHiLink": "如果您需要使用HiLink协议控制您的设备，需要确保您的连接设备已经接入到华为HiLink平台，详情参考:",
+    "hiLinkUrl": "https://developer.huawei.com/consumer/cn/smarthome",
+    "cancel": "取消"
+  },
+  "Files": {
+  }
+}

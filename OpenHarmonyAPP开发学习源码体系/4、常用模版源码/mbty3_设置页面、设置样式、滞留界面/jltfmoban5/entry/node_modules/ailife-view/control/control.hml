@@ -1,0 +1,29 @@
+<element name='enum' src='./enum/enum.hml'></element>
+<element name='display' src='./display/display.hml'></element>
+<element name='reversal' src='./reversal/reversal.hml'></element>
+<element name='increasedecrease' src='./increasedecrease/increasedecrease.hml'></element>
+<element name='progresss' src='./progress/progress.hml'></element>
+<element name='multifunction' src='./multifunction/multifunction.hml'></element>
+
+<div style="height : {{ controlData.controlHeight }}; flex-direction : column;">
+    <block for="{{ (idx, val) in controlData.lines }}">
+        <div if="{{ val == 0 }}">
+            <display display-data="{{ controlData.model[idx] }}"></display>
+        </div>
+        <div if="{{ val == 1 }}">
+            <reversal reversal-data="{{ controlData.model[idx] }}"></reversal>
+        </div>
+        <div if="{{ val == 2 }}">
+            <enum enum-data="{{ controlData.model[idx] }}"></enum>
+        </div>
+        <div if="{{ val == 3 }}">
+            <increasedecrease increasedecrease-data="{{ controlData.model[idx] }}"></increasedecrease>
+        </div>
+        <div if="{{ val == 4 }}">
+            <progresss progress-data="{{ controlData.model[idx] }}"></progresss>
+        </div>
+        <div if="{{ val == 5 }}">
+            <multifunction multifunction-data="{{ controlData.model[idx] }}"></multifunction>
+        </div>
+    </block>
+</div>

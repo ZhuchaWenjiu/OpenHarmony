@@ -1,0 +1,1455 @@
+{
+  "devName": "Soy milk machine",
+  "devType": "1",
+  "prodId": "SOYMILKMACHINE",
+  "templateUIInfo": [
+    {
+      "name": "make",
+      "span": 1,
+      "uiType": "MULTIFUNCTION",
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {},
+          "upLeft": {
+            "description": {
+              "path": "workingStatus/status",
+              "value": [
+                {
+                  "scope": "1",
+                  "target": "standby"
+                },
+                {
+                  "scope": "2",
+                  "target": "ready"
+                },
+                {
+                  "scope": "3",
+                  "target": "making"
+                },
+                {
+                  "scope": "4",
+                  "target": "complete"
+                },
+                {
+                  "scope": "5",
+                  "target": "reservation"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${workingStatus/status}"
+          },
+          "upRight": {}
+        }
+      },
+      "displayItemTwo": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "type": "normaltext",
+            "value": "remaining time"
+          },
+          "upLeft": {
+            "type": "dynamicText",
+            "value": "${remainingTime/time}"
+          },
+          "upRight": {
+          }
+        }
+      },
+      "multifunctionInfo": {
+        "path": "workingStatus/action",
+        "value": [
+          {
+            "scope": "1",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_prepare.png",
+                "icon": "/ic_prepare.png",
+                "disableIconNight": "/ic_prepare.png",
+                "iconNight": "/ic_prepare.png",
+                "value": 3,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "2",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_prepare.png",
+                "icon": "/ic_prepare.png",
+                "disableIconNight": "/ic_prepare.png",
+                "iconNight": "/ic_prepare.png",
+                "value": 3,
+                "sid": "workingStatus"
+              }
+            ],
+            "commandTwo": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_cancel.png",
+                "icon": "/ic_cancel.png",
+                "disableIconNight": "/ic_cancel.png",
+                "iconNight": "/ic_cancel.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "3",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_cancel.png",
+                "icon": "/ic_cancel.png",
+                "disableIconNight": "/ic_cancel.png",
+                "iconNight": "/ic_cancel.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "4",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_complete.png",
+                "icon": "/ic_complete.png",
+                "disableIconNight": "/ic_complete.png",
+                "iconNight": "/ic_complete.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "5",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_cancel.png",
+                "icon": "/ic_cancel.png",
+                "disableIconNight": "/ic_cancel.png",
+                "iconNight": "/ic_cancel.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "drink",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/yin_nor.png",
+              "icon": "/yin_nor.png",
+              "disableIconNight": "/yin_nor.png",
+              "iconNight": "/yin_nor.png",
+              "dialogList": [
+                "drinkKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/yin_on.png",
+              "icon": "/yin_on.png",
+              "disableIconNight": "/yin_on.png",
+              "iconNight": "/yin_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "steam",
+                  "advanced",
+                  "reservation"
+                ]
+              }
+            }
+          ],
+          "sid": "drinkMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "drinkMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${drinkMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "drinkMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "drink"
+                },
+                {
+                  "scope": "1",
+                  "target": "grains"
+                },
+                {
+                  "scope": "2",
+                  "target": "soy milk"
+                },
+                {
+                  "scope": "3",
+                  "target": "rice cereal"
+                },
+                {
+                  "scope": "4",
+                  "target": "light care"
+                },
+                {
+                  "scope": "5",
+                  "target": "food supplement"
+                },
+                {
+                  "scope": "6",
+                  "target": "milkshake"
+                },
+                {
+                  "scope": "7",
+                  "target": "fish soup"
+                },
+                {
+                  "scope": "8",
+                  "target": ""
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${drinkMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "steam",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/zheng_nor.png",
+              "icon": "/zheng_nor.png",
+              "disableIconNight": "/zheng_nor.png",
+              "iconNight": "/zheng_nor.png",
+              "dialogList": [
+                "steamKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/zheng_on.png",
+              "icon": "/zheng_on.png",
+              "disableIconNight": "/zheng_on.png",
+              "iconNight": "/zheng_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "drink",
+                  "advanced",
+                  "reservation"
+                ]
+              }
+            }
+          ],
+          "sid": "steamMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "steamMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${steamMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "steamMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "steam"
+                },
+                {
+                  "scope": "1",
+                  "target": "rice"
+                },
+                {
+                  "scope": "2",
+                  "target": "pastry"
+                },
+                {
+                  "scope": "3",
+                  "target": "custard"
+                },
+                {
+                  "scope": "4",
+                  "target": "miscellaneous grains"
+                },
+                {
+                  "scope": "5",
+                  "target": "seafood"
+                },
+                {
+                  "scope": "6",
+                  "target": "seasonal vegetables"
+                },
+                {
+                  "scope": "7",
+                  "target": "warm"
+                },
+                {
+                  "scope": "8",
+                  "target": "disinfect"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${steamMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "advanced",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/gaoji_nor.png",
+              "icon": "/gaoji_nor.png",
+              "disableIconNight": "/gaoji_nor.png",
+              "iconNight": "/gaoji_nor.png",
+              "dialogList": [
+                "advancedKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/gaoji_on.png",
+              "icon": "/gaoji_on.png",
+              "disableIconNight": "/gaoji_on.png",
+              "iconNight": "/gaoji_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "drink",
+                  "steam",
+                  "reservation"
+                ]
+              }
+            }
+          ],
+          "sid": "advancedMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "advancedMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${advancedMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "advancedMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "advanced"
+                },
+                {
+                  "scope": "1",
+                  "target": "grind"
+                },
+                {
+                  "scope": "2",
+                  "target": "hand ground coffee"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${advancedMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "reservation",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/ic_yuyue_nor.png",
+              "icon": "/ic_yuyue_nor.png",
+              "disableIconNight": "/ic_yuyue_nor.png",
+              "iconNight": "/ic_yuyue_nor.png",
+              "dialogList": [
+                "reservationKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/ic_yuyue_on.png",
+              "icon": "/ic_yuyue_on.png",
+              "disableIconNight": "/ic_yuyue_on.png",
+              "iconNight": "/ic_yuyue_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "drink",
+                  "steam",
+                  "advanced"
+                ]
+              }
+            }
+          ],
+          "sid": "reservationMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "reservationMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${reservationMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "reservationMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "reservation"
+                },
+                {
+                  "scope": "1",
+                  "target": "drink"
+                },
+                {
+                  "scope": "2",
+                  "target": "steam"
+                },
+                {
+                  "scope": "3",
+                  "target": "advanced"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${reservationMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    }
+  ],
+  "customDisplayUIInfo": [
+    {
+      "title": "more",
+      "sid": "sid",
+      "characteristic": "characteristic",
+      "itemList": [
+        {
+          "icon": "/ic_shipu.png",
+          "iconNight": "/ic_shipu.png",
+          "text": "healthy recipes",
+          "value": 0
+        },
+        {
+          "icon": "/ic_shangcheng.png",
+          "iconNight": "/ic_shangcheng.png",
+          "text": "mall",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "title": "equipment Service",
+      "sid": "sid",
+      "characteristic": "characteristic",
+      "itemList": [
+        {
+          "icon": "/ic_shuoming.png",
+          "iconNight": "/ic_shuoming.png",
+          "text": "product manual",
+          "value": 0
+        },
+        {
+          "icon": "/ic_weixiu.png",
+          "iconNight": "/ic_weixiu.png",
+          "text": "maintenance",
+          "value": 1
+        },
+        {
+          "icon": "/ic_guzhangchaxun.png",
+          "iconNight": "/ic_guzhangchaxun.png",
+          "text": "fault finding",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "dialogUIInfo": [
+    {
+      "name": "drink",
+      "id": "drinkKind",
+      "path": "drinkKind",
+      "dialogType": "ENUM",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "next",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "grains",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 1
+        },
+        {
+          "name": "soy milk",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 2
+        },
+        {
+          "name": "rice cereal",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 3
+        },
+        {
+          "name": "light care",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 4
+        },
+        {
+          "name": "food supplement",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 5
+        },
+        {
+          "name": "milkshake",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 6
+        },
+        {
+          "name": "fish soup",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 7
+        },
+        {
+          "name": "coffee",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "steam",
+      "dialogType": "ENUM",
+      "id": "steamKind",
+      "path": "steamKind",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "rice",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 1
+        },
+        {
+          "name": "pastry",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 2
+        },
+        {
+          "name": "custard",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 3
+        },
+        {
+          "name": "miscellaneous grains",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 4
+        },
+        {
+          "name": "seafood",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 5
+        },
+        {
+          "name": "seasonal vegetables",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 6
+        },
+        {
+          "name": "warm",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 7
+        },
+        {
+          "name": "disinfect",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "advanced",
+      "dialogType": "ENUM",
+      "id": "advancedKind",
+      "path": "advancedKind",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "grind",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            }
+          },
+          "dialogList": [
+            "flour"
+          ],
+          "value": 1
+        },
+        {
+          "name": "hand ground coffee",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            }
+          },
+          "dialogList": [
+            "handGrindingCoffee"
+          ],
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "reservation",
+      "dialogType": "ENUM",
+      "id": "reservationKind",
+      "path": "reservationKind",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "drink",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_yin_nor.png",
+              "target": "/ic_yin_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_yin_nor.png",
+              "target": "/ic_yin_on.png"
+            }
+          },
+          "dialogList": [
+            "drinkKind",
+            "time"
+          ],
+          "value": 1
+        },
+        {
+          "name": "steam",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_zheng_nor.png",
+              "target": "/ic_zheng_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_zheng_nor.png",
+              "target": "/ic_zheng_on.png"
+            }
+          },
+          "dialogList": [
+            "steamKind",
+            "time"
+          ],
+          "value": 2
+        },
+        {
+          "name": "advanced",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_gaoji_nor.png",
+              "target": "/ic_gaoji_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_gaoji_nor.png",
+              "target": "/ic_gaoji_on.png"
+            }
+          },
+          "dialogList": [
+            "advancedKind",
+            "time"
+          ],
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "time",
+      "id": "duration",
+      "path": "duration",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "next",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "multi-text",
+      "range": [
+        [
+          "0m",
+          "1m",
+          "2m",
+          "3m",
+          "4m",
+          "5m",
+          "6m",
+          "7m",
+          "8m",
+          "9m",
+          "10m",
+          "11m",
+          "12m",
+          "13m",
+          "14m",
+          "15m",
+          "16m",
+          "17m",
+          "18m",
+          "19m",
+          "20m",
+          "21m",
+          "22m",
+          "23m",
+          "24m",
+          "25m",
+          "26m",
+          "27m",
+          "28m",
+          "29m",
+          "30m",
+          "31m",
+          "32m",
+          "33m",
+          "34m",
+          "35m",
+          "36m",
+          "37m",
+          "38m",
+          "39m",
+          "40m",
+          "41m",
+          "42m",
+          "43m",
+          "44m",
+          "45m",
+          "46m",
+          "47m",
+          "48m",
+          "49m",
+          "50m",
+          "51m",
+          "52m",
+          "53m",
+          "54m",
+          "55m",
+          "56m",
+          "57m",
+          "58m",
+          "59m"
+        ],
+        [
+          "0s",
+          "1s",
+          "2s",
+          "3s",
+          "4s",
+          "5s",
+          "6s",
+          "7s",
+          "8s",
+          "9s",
+          "10s",
+          "11s",
+          "12s",
+          "13s",
+          "14s",
+          "15s",
+          "16s",
+          "17s",
+          "18s",
+          "19s",
+          "20s",
+          "21s",
+          "22s",
+          "23s",
+          "24s",
+          "25s",
+          "26s",
+          "27s",
+          "28s",
+          "29s",
+          "30s",
+          "31s",
+          "32s",
+          "33s",
+          "34s",
+          "35s",
+          "36s",
+          "37s",
+          "38s",
+          "39s",
+          "40s",
+          "41s",
+          "42s",
+          "43s",
+          "44s",
+          "45s",
+          "46s",
+          "47s",
+          "48s",
+          "49s",
+          "50s",
+          "51s",
+          "52s",
+          "53s",
+          "54s",
+          "55s",
+          "56s",
+          "57s",
+          "58s",
+          "59s"
+        ]
+      ],
+      "value": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ]
+      ]
+    },
+    {
+      "name": "water temperature setting",
+      "id": "temperature",
+      "path": "temperature",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "next",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "postField": "℃"
+    },
+    {
+      "name": "capacity setting",
+      "id": "capacity",
+      "path": "capacity",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "next",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "300",
+        "600",
+        "900",
+        "1200"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "postField": "ml"
+    },
+    {
+      "name": "speed",
+      "id": "speed",
+      "path": "speed",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "ultra low speed",
+        "low speed",
+        "medium speed",
+        "high speed",
+        "ultra hight speed"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "grind",
+      "id": "flour",
+      "dialogType": "INFO",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "icon": "/ic_mofen.png",
+      "headline": "tips：",
+      "desc": "Please switch the cup body to a grinding cup before using this function."
+    },
+    {
+      "name": "hand ground coffee",
+      "id": "handGrindingCoffee",
+      "dialogType": "INFO",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "icon": "/ic_shoumokafei.png",
+      "headline": "tips：",
+      "desc": "Please put the coffee powder in the dry grinding cup into the coffee filter, and then click to start brewing."
+    },
+    {
+      "name": "time",
+      "id": "time",
+      "path": "time",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "confirm",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "time",
+      "containSecond": true,
+      "hours": 24
+    }
+  ],
+  "version": "0.1"
+}

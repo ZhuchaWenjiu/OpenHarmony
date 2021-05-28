@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.example.myapplication_huibianli" android:versionCode="1" android:versionName="1.0">
+  <uses-feature android:name="zidane.software.ability" android:required="false"/>
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="29"/>
+  <application android:resizeableActivity="false" android:usesCleartextTraffic="false" android:icon="@drawable/huibianli_log" android:directBootAware="false" android:allowBackup="false" android:label="惠便利" android:process="com.example.myapplication_huibianli" android:name="com.example.myapplication_huibianli.ShellMyApplication" android:persistent="false">
+    <meta-data android:value="true" android:name="permZA"/>
+    <activity android:icon="@drawable/huibianli_log" android:label="惠便利" android:process="com.example.myapplication_huibianli" android:screenOrientation="unspecified" android:name="com.example.myapplication_huibianli.MainAbilityShellActivity" android:launchMode="standard">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

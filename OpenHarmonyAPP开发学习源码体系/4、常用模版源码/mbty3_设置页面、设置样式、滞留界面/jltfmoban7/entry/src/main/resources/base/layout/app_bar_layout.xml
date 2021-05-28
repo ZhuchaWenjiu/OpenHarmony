@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:app_bar"
+    ohos:height="match_content"
+    ohos:width="match_parent">
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:id="$+id:title_layout"
+        ohos:height="$float:title_layout_height"
+        ohos:width="match_parent"
+        ohos:background_element="$color:title_layout_background_color"
+        ohos:orientation="horizontal">
+        <Image
+            ohos:id="$+id:left_arrow"
+            ohos:height="$float:title_image_size"
+            ohos:width="$float:title_image_size"
+            ohos:end_margin="$float:title_text_margin"
+            ohos:foreground_element="$media:back"
+            ohos:layout_alignment="center"
+            ohos:start_margin="$float:title_image_margin"/>
+        <Text
+            ohos:id="$+id:title"
+            ohos:height="$float:title_text_background_height"
+            ohos:width="match_content"
+            ohos:layout_alignment="center"
+            ohos:text="$string:title_text"
+            ohos:text_alignment="vertical_center"
+            ohos:text_color="$color:title_text_color"
+            ohos:text_size="$float:title_text_size"/>
+    </DirectionalLayout>
+</StackLayout>

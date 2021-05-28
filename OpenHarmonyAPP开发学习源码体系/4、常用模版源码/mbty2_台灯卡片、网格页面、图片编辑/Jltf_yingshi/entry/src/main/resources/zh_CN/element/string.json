@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "隐私声明页"
+    },
+    {
+      "name": "title_text",
+      "value": "蛟龙腾飞"
+    },
+    {
+      "name": "content_privacy_chap1",
+      "value": "透明可控、用户受益、合法合规、确保数据安全，是华为隐私保护的基本原则。我们将这些原则融入产品设计始终，贯穿于产品开发全过程。"
+    },
+    {
+      "name": "content_privacy_chap2",
+      "value": "我们旨在用最少的数据为您提供最便捷的服务，同时您对您的数据以及华为对数据的处理知情权和控制权。"
+    },
+    {
+      "name": "know_more",
+      "value": "了解详情"
+    },
+    {
+      "name": "privacy_title",
+      "value": "数据和隐私"
+    },
+    {
+      "name": "privacy_url",
+      "value": "https://consumer.huawei.com/cn/privacy/privacy-policy/"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<div class="container">
+    <badge class="jltfbadge" config="{{jltfbadgeconfig}}" visible="true" count="100" maxcount="99">
+        <text class="jltftext1">huawei</text>
+    </badge>
+    <badge class="jltfbadge" visible="true" count="0">
+        <text class="jltftext2">huawei</text>
+    </badge>
+</div>

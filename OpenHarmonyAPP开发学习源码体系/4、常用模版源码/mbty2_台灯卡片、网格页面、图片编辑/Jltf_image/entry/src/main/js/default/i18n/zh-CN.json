@@ -1,0 +1,21 @@
+{
+  "strings": {
+    "app_bar": {
+      "title": "蛟龙腾飞"
+    },
+    "refresh_bar": {
+      "refreshSucceed": "更新了{count}条新内容",
+      "refreshFailed": "更新失败"
+    },
+    "content_bar": {
+      "mainText": "图片",
+      "auxiliaryText": "图片观赏"
+    }
+  },
+  "color": {
+    "refresh_bar": {
+      "refreshSucceed": "#0A59F7",
+      "refreshFailed": "#E84026"
+    }
+  }
+}

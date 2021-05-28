@@ -1,0 +1,22 @@
+<element name="item" src="../item/item.hml"></element>
+<div class="display" style="opacity : {{ displayData.alpha }}; background-color : {{ displayData.backgroundColor }};">
+    <div if="{{ displayData.defaultGravity }}" class="item-container">
+        <div if="{{ displayData.showLeft }}" class="left-item">
+            <item itemdata="{{ displayData.itemLeft }}"></item>
+        </div>
+        <div class="center-item">
+            <div if="{{ displayData.showCenter }}">
+                <item itemdata="{{ displayData.itemCenter }}"></item>
+            </div>
+        </div>
+        <div if="{{ displayData.showRight }}" class="right-item">
+            <item itemdata="{{ displayData.itemRight }}"></item>
+        </div>
+    </div>
+    <div if="{{ ! displayData.defaultGravity }}" class="divide-container" for="{{ displayData.itemList }}">
+        <div if="{{ $idx != 0 && ! displayData.defaultGravity }}" class="divider"></div>
+        <div class="divide-item">
+            <item itemdata="{{ $item }}"></item>
+        </div>
+    </div>
+</div>

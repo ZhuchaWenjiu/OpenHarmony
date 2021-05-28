@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:height="2340px"
+        ohos:width="1080px"
+        ohos:image_src="$media:shici5"/>
+    <Button
+        ohos:id="$+id:jltf_juansi"
+        ohos:height="150px"
+        ohos:width="200px"
+        ohos:text="答案"
+        ohos:text_size="20fp"
+        ohos:top_margin="220px"
+        ohos:left_margin="135px"
+        ohos:text_color="white"
+        ohos:background_element="#FF025702"/>
+    <Button
+        ohos:id="$+id:jltf_shouye"
+        ohos:height="150px"
+        ohos:width="400px"
+        ohos:text="进入答题"
+        ohos:text_size="22fp"
+        ohos:text_color="white"
+        ohos:background_element="$graphic:jltfoval_button_element"
+        ohos:top_margin="1000px"
+        ohos:left_margin="350px"/>
+</StackLayout>

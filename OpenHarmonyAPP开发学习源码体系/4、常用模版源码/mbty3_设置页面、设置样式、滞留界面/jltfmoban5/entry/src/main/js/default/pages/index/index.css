@@ -1,0 +1,175 @@
+.container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #F1F3F5;
+}
+
+.title {
+    height: 56px;
+    flex-direction: row;
+}
+
+.title-back-image {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    margin-top: 16px;
+}
+
+.title-text {
+    margin-left: 16px;
+    font-size: 24px;
+    opacity: 0.9;
+    height: 56px;
+    justify-content: center;
+}
+
+.title-more-image {
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    position: absolute;
+    right: 12px;
+}
+
+.device-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.device-image {
+    width: 262px;
+    height: 262px;
+}
+
+.device-logo {
+    height: 10px;
+    width: 80px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.device-logo-message {
+    height: 10px;
+    width: 80px;
+    margin-top: 2px;
+}
+
+.center-container {
+    align-items: center;
+    flex-direction: column;
+}
+
+.message {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    height: 20px;
+}
+
+.progress {
+    width: 18px;
+    height: 20px;
+}
+
+.message-text {
+    font-size: 12px;
+}
+
+.spread {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.spread-text {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.spread-image {
+    width: 24px;
+    height: 12px;
+    margin-left: 2px;
+    margin-top: 3px;
+    justify-content: center;
+}
+
+.dialog {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.error-location {
+    position: absolute;
+    height: 48px;
+    margin-top: 56px;
+}
+
+.error-container {
+    width: 100%;
+    height: 48px;
+    border-radius: 18px;
+    flex-direction: row;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #26E84026;
+}
+
+.error-image {
+    width: 24px;
+    height: 24px;
+    margin-top: 12px;
+}
+
+.error-text {
+    font-size: 16px;
+    margin-left: 16px;
+    height: 48px;
+    color: #E84026;
+}
+
+.hi-link-dialog {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.dialog-container {
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.dialog-title {
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.9;
+    height: 56px;
+    text-align: center;
+}
+
+.cancel-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-color: #0a59f7;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.url-text {
+    color: #0a59f7;
+}
+

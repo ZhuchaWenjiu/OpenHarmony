@@ -1,0 +1,23 @@
+<div>
+    <div class="item-container" if="{{ itemdata.showTextItem }}" style="align-items : {{ itemdata.itemLocation }};">
+        <div class="item-up-container"
+             style="justify-content : {{ itemdata.itemLocation }}; align-items : {{ itemdata.itemLocation }};">
+            <text class="text-item-upleft-text" style="color : {{ itemdata.textItem.upLeft.color }};
+                    font-size : {{ itemdata.textItem.upLeft.size }};">{{ itemdata.textItem.upLeft.text }}</text>
+            <text class="text-item-upright-text" if="{{ itemdata.textItem.upRight.show }}"
+                  style="color : {{ itemdata.textItem.upRight.color }};">{{ itemdata.textItem.upRight.text }}</text>
+        </div>
+        <text class="text-item-down-text" if="{{ itemdata.textItem.down.show }}"
+              style="color : {{ itemdata.textItem.down.color }};">{{ itemdata.textItem.down.text }}</text>
+    </div>
+
+    <div class="item-container" if="{{ itemdata.showIconItem }}" style="align-items : {{ itemdata.itemLocation }};">
+        <div class="item-up-container" style="justify-content : {{ itemdata.itemLocation }}; align-items : center;">
+            <image class="item-icon" src="{{ itemdata.iconItem.upLeft.icon }}" onclick="itemClick()"/>
+            <text class="icon-item-upright-text" if="{{ itemdata.iconItem.upRight.show }}"
+                  style="color : {{ itemdata.iconItem.upRight.color }};">{{ itemdata.iconItem.upRight.text }}</text>
+        </div>
+        <text class="icon-item-down-text" if="{{ itemdata.iconItem.down.show }}" onclick="itemClick()"
+              style="color : {{ itemdata.iconItem.down.color }};">{{ itemdata.iconItem.down.text }}</text>
+    </div>
+</div>

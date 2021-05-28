@@ -1,0 +1,29 @@
+<div class="container">
+    <tabs class = "tabs" index="0" vertical="false" onchange="change">
+        <tab-bar class="tab-bar" mode="fixed">
+            <text class="tab-text">水果</text>
+            <text class="tab-text">蔬菜</text>
+            <text class="tab-text">零食</text>
+        </tab-bar>
+        <tab-content class="tabcontent" scrollable="true">
+            <div class="item-content" >
+                <text class="item-title">
+                      苹果
+
+香蕉</text>
+            </div>
+            <div class="item-content" >
+                <text class="item-title">
+                      白菜
+
+青菜</text>
+            </div>
+            <div class="item-content" >
+                <text class="item-title">
+                      薯片
+
+辣条</text>
+            </div>
+        </tab-content>
+    </tabs>
+</div>

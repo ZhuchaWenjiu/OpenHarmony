@@ -1,0 +1,1455 @@
+{
+  "devName": "豆浆机",
+  "devType": "1",
+  "prodId": "SOYMILKMACHINE",
+  "templateUIInfo": [
+    {
+      "name": "制作",
+      "span": 1,
+      "uiType": "MULTIFUNCTION",
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {},
+          "upLeft": {
+            "description": {
+              "path": "workingStatus/status",
+              "value": [
+                {
+                  "scope": "1",
+                  "target": "待机中"
+                },
+                {
+                  "scope": "2",
+                  "target": "准备中"
+                },
+                {
+                  "scope": "3",
+                  "target": "制作中"
+                },
+                {
+                  "scope": "4",
+                  "target": "制作完成"
+                },
+                {
+                  "scope": "5",
+                  "target": "预约中"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${workingStatus/status}"
+          },
+          "upRight": {}
+        }
+      },
+      "displayItemTwo": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "type": "normaltext",
+            "value": "剩余时间"
+          },
+          "upLeft": {
+            "type": "dynamicText",
+            "value": "${remainingTime/time}"
+          },
+          "upRight": {
+          }
+        }
+      },
+      "multifunctionInfo": {
+        "path": "workingStatus/action",
+        "value": [
+          {
+            "scope": "1",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_prepare.png",
+                "icon": "/ic_prepare.png",
+                "disableIconNight": "/ic_prepare.png",
+                "iconNight": "/ic_prepare.png",
+                "value": 3,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "2",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_prepare.png",
+                "icon": "/ic_prepare.png",
+                "disableIconNight": "/ic_prepare.png",
+                "iconNight": "/ic_prepare.png",
+                "value": 3,
+                "sid": "workingStatus"
+              }
+            ],
+            "commandTwo": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_cancel.png",
+                "icon": "/ic_cancel.png",
+                "disableIconNight": "/ic_cancel.png",
+                "iconNight": "/ic_cancel.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "3",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_cancel.png",
+                "icon": "/ic_cancel.png",
+                "disableIconNight": "/ic_cancel.png",
+                "iconNight": "/ic_cancel.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "4",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_complete.png",
+                "icon": "/ic_complete.png",
+                "disableIconNight": "/ic_complete.png",
+                "iconNight": "/ic_complete.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          },
+          {
+            "scope": "5",
+            "commandOne": [
+              {
+                "characteristic": "action",
+                "disableIcon": "/ic_cancel.png",
+                "icon": "/ic_cancel.png",
+                "disableIconNight": "/ic_cancel.png",
+                "iconNight": "/ic_cancel.png",
+                "value": 0,
+                "sid": "workingStatus"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "饮功能",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/yin_nor.png",
+              "icon": "/yin_nor.png",
+              "disableIconNight": "/yin_nor.png",
+              "iconNight": "/yin_nor.png",
+              "dialogList": [
+                "drinkKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/yin_on.png",
+              "icon": "/yin_on.png",
+              "disableIconNight": "/yin_on.png",
+              "iconNight": "/yin_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "蒸功能",
+                  "高级功能",
+                  "预约"
+                ]
+              }
+            }
+          ],
+          "sid": "drinkMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "drinkMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${drinkMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "drinkMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "饮功能"
+                },
+                {
+                  "scope": "1",
+                  "target": "五谷"
+                },
+                {
+                  "scope": "2",
+                  "target": "豆浆"
+                },
+                {
+                  "scope": "3",
+                  "target": "米糊"
+                },
+                {
+                  "scope": "4",
+                  "target": "轻养"
+                },
+                {
+                  "scope": "5",
+                  "target": "辅食"
+                },
+                {
+                  "scope": "6",
+                  "target": "奶昔"
+                },
+                {
+                  "scope": "7",
+                  "target": "鱼汤"
+                },
+                {
+                  "scope": "8",
+                  "target": "咖啡"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${drinkMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "蒸功能",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/zheng_nor.png",
+              "icon": "/zheng_nor.png",
+              "disableIconNight": "/zheng_nor.png",
+              "iconNight": "/zheng_nor.png",
+              "dialogList": [
+                "steamKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/zheng_on.png",
+              "icon": "/zheng_on.png",
+              "disableIconNight": "/zheng_on.png",
+              "iconNight": "/zheng_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "饮功能",
+                  "高级功能",
+                  "预约"
+                ]
+              }
+            }
+          ],
+          "sid": "steamMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "steamMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${steamMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "steamMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "蒸功能"
+                },
+                {
+                  "scope": "1",
+                  "target": "米饭"
+                },
+                {
+                  "scope": "2",
+                  "target": "面点"
+                },
+                {
+                  "scope": "3",
+                  "target": "蛋羹"
+                },
+                {
+                  "scope": "4",
+                  "target": "杂粮"
+                },
+                {
+                  "scope": "5",
+                  "target": "海鲜"
+                },
+                {
+                  "scope": "6",
+                  "target": "时蔬"
+                },
+                {
+                  "scope": "7",
+                  "target": "温热"
+                },
+                {
+                  "scope": "8",
+                  "target": "消毒"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${steamMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "高级功能",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/gaoji_nor.png",
+              "icon": "/gaoji_nor.png",
+              "disableIconNight": "/gaoji_nor.png",
+              "iconNight": "/gaoji_nor.png",
+              "dialogList": [
+                "advancedKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/gaoji_on.png",
+              "icon": "/gaoji_on.png",
+              "disableIconNight": "/gaoji_on.png",
+              "iconNight": "/gaoji_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "饮功能",
+                  "蒸功能",
+                  "预约"
+                ]
+              }
+            }
+          ],
+          "sid": "advancedMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "advancedMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${advancedMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "advancedMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "高级功能"
+                },
+                {
+                  "scope": "1",
+                  "target": "磨粉"
+                },
+                {
+                  "scope": "2",
+                  "target": "手磨咖啡"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${advancedMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "预约",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/ic_yuyue_nor.png",
+              "icon": "/ic_yuyue_nor.png",
+              "disableIconNight": "/ic_yuyue_nor.png",
+              "iconNight": "/ic_yuyue_nor.png",
+              "dialogList": [
+                "reservationKind"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/ic_yuyue_on.png",
+              "icon": "/ic_yuyue_on.png",
+              "disableIconNight": "/ic_yuyue_on.png",
+              "iconNight": "/ic_yuyue_on.png",
+              "value": 1,
+              "operable": false,
+              "disable": {
+                "name": [
+                  "饮功能",
+                  "蒸功能",
+                  "高级功能"
+                ]
+              }
+            }
+          ],
+          "sid": "reservationMode"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {
+            "color": {
+              "path": "reservationMode/description",
+              "value": [
+                {
+                  "scope": "-",
+                  "target": "007DFF"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${reservationMode/description}"
+          },
+          "upLeft": {
+            "description": {
+              "path": "reservationMode/mode",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "预约"
+                },
+                {
+                  "scope": "1",
+                  "target": "饮功能"
+                },
+                {
+                  "scope": "2",
+                  "target": "蒸功能"
+                },
+                {
+                  "scope": "3",
+                  "target": "高级功能"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${reservationMode/mode}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    }
+  ],
+  "customDisplayUIInfo": [
+    {
+      "title": "查看更多",
+      "sid": "sid",
+      "characteristic": "characteristic",
+      "itemList": [
+        {
+          "icon": "/ic_shipu.png",
+          "iconNight": "/ic_shipu.png",
+          "text": "健康食谱",
+          "value": 0
+        },
+        {
+          "icon": "/ic_shangcheng.png",
+          "iconNight": "/ic_shangcheng.png",
+          "text": "商城",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "title": "设备服务",
+      "sid": "sid",
+      "characteristic": "characteristic",
+      "itemList": [
+        {
+          "icon": "/ic_shuoming.png",
+          "iconNight": "/ic_shuoming.png",
+          "text": "产品说明",
+          "value": 0
+        },
+        {
+          "icon": "/ic_weixiu.png",
+          "iconNight": "/ic_weixiu.png",
+          "text": "维修保养",
+          "value": 1
+        },
+        {
+          "icon": "/ic_guzhangchaxun.png",
+          "iconNight": "/ic_guzhangchaxun.png",
+          "text": "故障查询",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "dialogUIInfo": [
+    {
+      "name": "饮功能选择",
+      "id": "drinkKind",
+      "path": "drinkKind",
+      "dialogType": "ENUM",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "下一步",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "五谷",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 1
+        },
+        {
+          "name": "豆浆",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 2
+        },
+        {
+          "name": "米糊",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 3
+        },
+        {
+          "name": "轻养",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 4
+        },
+        {
+          "name": "辅食",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 5
+        },
+        {
+          "name": "奶昔",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 6
+        },
+        {
+          "name": "鱼汤",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 7
+        },
+        {
+          "name": "咖啡",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature",
+            "capacity",
+            "speed"
+          ],
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "蒸功能选择",
+      "dialogType": "ENUM",
+      "id": "steamKind",
+      "path": "steamKind",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确定",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "米饭",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 1
+        },
+        {
+          "name": "面点",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_doujiang_nor.png",
+              "target": "/ic_doujiang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 2
+        },
+        {
+          "name": "蛋羹",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_mihu_nor.png",
+              "target": "/ic_mihu_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 3
+        },
+        {
+          "name": "杂粮",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 4
+        },
+        {
+          "name": "海鲜",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_fushi_nor.png",
+              "target": "/ic_fushi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 5
+        },
+        {
+          "name": "时蔬",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_naixi_nor.png",
+              "target": "/ic_naixi_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 6
+        },
+        {
+          "name": "温热",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_yutang_nor.png",
+              "target": "/ic_yutang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 7
+        },
+        {
+          "name": "消毒",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_qingyang_nor.png",
+              "target": "/ic_qingyang_on.png"
+            }
+          },
+          "dialogList": [
+            "duration",
+            "temperature"
+          ],
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "高级功能选择",
+      "dialogType": "ENUM",
+      "id": "advancedKind",
+      "path": "advancedKind",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确定",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "磨粉",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_wugu_nor.png",
+              "target": "/ic_wugu_on.png"
+            }
+          },
+          "dialogList": [
+            "flour"
+          ],
+          "value": 1
+        },
+        {
+          "name": "手磨咖啡",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_kafei_nor.png",
+              "target": "/ic_kafei_on.png"
+            }
+          },
+          "dialogList": [
+            "handGrindingCoffee"
+          ],
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "预约选择",
+      "dialogType": "ENUM",
+      "id": "reservationKind",
+      "path": "reservationKind",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确定",
+          "type": "submit"
+        }
+      ],
+      "command": [
+        {
+          "name": "饮功能",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_yin_nor.png",
+              "target": "/ic_yin_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_yin_nor.png",
+              "target": "/ic_yin_on.png"
+            }
+          },
+          "dialogList": [
+            "drinkKind",
+            "time"
+          ],
+          "value": 1
+        },
+        {
+          "name": "蒸功能",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_zheng_nor.png",
+              "target": "/ic_zheng_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_zheng_nor.png",
+              "target": "/ic_zheng_on.png"
+            }
+          },
+          "dialogList": [
+            "steamKind",
+            "time"
+          ],
+          "value": 2
+        },
+        {
+          "name": "高级功能",
+          "icon": {
+            "value": {
+              "defaultTarget": "/ic_gaoji_nor.png",
+              "target": "/ic_gaoji_on.png"
+            },
+            "valueNight": {
+              "defaultTarget": "/ic_gaoji_nor.png",
+              "target": "/ic_gaoji_on.png"
+            }
+          },
+          "dialogList": [
+            "advancedKind",
+            "time"
+          ],
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "时长设置",
+      "id": "duration",
+      "path": "duration",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "下一步",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "multi-text",
+      "range": [
+        [
+          "0分",
+          "1分",
+          "2分",
+          "3分",
+          "4分",
+          "5分",
+          "6分",
+          "7分",
+          "8分",
+          "9分",
+          "10分",
+          "11分",
+          "12分",
+          "13分",
+          "14分",
+          "15分",
+          "16分",
+          "17分",
+          "18分",
+          "19分",
+          "20分",
+          "21分",
+          "22分",
+          "23分",
+          "24分",
+          "25分",
+          "26分",
+          "27分",
+          "28分",
+          "29分",
+          "30分",
+          "31分",
+          "32分",
+          "33分",
+          "34分",
+          "35分",
+          "36分",
+          "37分",
+          "38分",
+          "39分",
+          "40分",
+          "41分",
+          "42分",
+          "43分",
+          "44分",
+          "45分",
+          "46分",
+          "47分",
+          "48分",
+          "49分",
+          "50分",
+          "51分",
+          "52分",
+          "53分",
+          "54分",
+          "55分",
+          "56分",
+          "57分",
+          "58分",
+          "59分"
+        ],
+        [
+          "0秒",
+          "1秒",
+          "2秒",
+          "3秒",
+          "4秒",
+          "5秒",
+          "6秒",
+          "7秒",
+          "8秒",
+          "9秒",
+          "10秒",
+          "11秒",
+          "12秒",
+          "13秒",
+          "14秒",
+          "15秒",
+          "16秒",
+          "17秒",
+          "18秒",
+          "19秒",
+          "20秒",
+          "21秒",
+          "22秒",
+          "23秒",
+          "24秒",
+          "25秒",
+          "26秒",
+          "27秒",
+          "28秒",
+          "29秒",
+          "30秒",
+          "31秒",
+          "32秒",
+          "33秒",
+          "34秒",
+          "35秒",
+          "36秒",
+          "37秒",
+          "38秒",
+          "39秒",
+          "40秒",
+          "41秒",
+          "42秒",
+          "43秒",
+          "44秒",
+          "45秒",
+          "46秒",
+          "47秒",
+          "48秒",
+          "49秒",
+          "50秒",
+          "51秒",
+          "52秒",
+          "53秒",
+          "54秒",
+          "55秒",
+          "56秒",
+          "57秒",
+          "58秒",
+          "59秒"
+        ]
+      ],
+      "value": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
+        ]
+      ]
+    },
+    {
+      "name": "水温设置",
+      "id": "temperature",
+      "path": "temperature",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "下一步",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "postField": "℃"
+    },
+    {
+      "name": "容量设置",
+      "id": "capacity",
+      "path": "capacity",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "下一步",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "300",
+        "600",
+        "900",
+        "1200"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "postField": "ml"
+    },
+    {
+      "name": "转速设置",
+      "id": "speed",
+      "path": "speed",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确认",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "超低速",
+        "低速",
+        "中速",
+        "高速",
+        "破壁"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "磨粉功能",
+      "id": "flour",
+      "dialogType": "INFO",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确认",
+          "type": "submit"
+        }
+      ],
+      "icon": "/ic_mofen.png",
+      "headline": "温馨提示：",
+      "desc": "请将杯体切换成磨粉杯，再使用此功能。"
+    },
+    {
+      "name": "手磨咖啡功能",
+      "id": "handGrindingCoffee",
+      "dialogType": "INFO",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确认",
+          "type": "submit"
+        }
+      ],
+      "icon": "/ic_shoumokafei.png",
+      "headline": "温馨提示：",
+      "desc": "请将干磨杯内的咖啡粉装到咖啡滤网中，再点击开始进行冲泡。"
+    },
+    {
+      "name": "时间设置",
+      "id": "time",
+      "path": "time",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "取消",
+          "type": "cancel"
+        },
+        {
+          "name": "确认",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "time",
+      "containSecond": true,
+      "hours": 24
+    }
+  ],
+  "version": "0.1"
+}

@@ -1,0 +1,52 @@
+{
+    "app": {
+        "bundleName": "com.example.myapplication_huibianli",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 3,
+            "target": 4
+        },
+        "version": {
+            "code": 1,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".MyApplication",
+        "deviceType": [
+            "phone",
+            "tv",
+            "tablet"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry"
+        },
+        "abilities": [
+            {
+                "name": "com.example.myapplication_huibianli.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:huibianli_log",
+                "label": "\u60e0\u4fbf\u5229",
+                "type": "page",
+                "launchType": "standard",
+                "orientation": "unspecified",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "package": "com.example.myapplication_huibianli"
+    }
+}

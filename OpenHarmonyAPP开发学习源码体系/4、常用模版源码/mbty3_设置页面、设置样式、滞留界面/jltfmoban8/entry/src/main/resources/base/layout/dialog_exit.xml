@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:height="$float:height_exit_dialog"
+                   ohos:width="$float:width_exit_dialog"
+                   ohos:align_parent_bottom="true"
+                   ohos:alignment="horizontal_center"
+                   ohos:background_element="$graphic:shape_exit_dialog_content_bg"
+                   ohos:bottom_padding="$float:padding_exit_dialog"
+                   ohos:horizontal_center="true"
+                   ohos:left_margin="$float:margin_exit_dialog"
+                   ohos:orientation="vertical"
+                   ohos:right_margin="$float:margin_exit_dialog"
+                   ohos:top_padding="$float:padding_exit_dialog">
+    <Text
+        ohos:id="$+id:tv_title"
+        ohos:height="$float:height_exit_dialog_item"
+        ohos:width="match_parent"
+        ohos:text="$string:exit_title"
+        ohos:text_alignment="center"
+        ohos:text_color="$color:background"
+        ohos:text_size="$float:size_exit_dialog_title"
+        ohos:text_weight="500"/>
+
+    <DirectionalLayout
+        ohos:height="$float:height_exit_dialog_item"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal"
+        ohos:total_weight="2">
+
+        <Text
+            ohos:id="$+id:tv_cancel"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:text="$string:exit_cancel"
+            ohos:text_alignment="center"
+            ohos:text_color="$color:exit_dialog_text"
+            ohos:text_size="$float:size_exit_dialog_option"
+            ohos:text_weight="500"
+            ohos:weight="1"/>
+
+        <Component
+            ohos:height="$float:height_exit_dialog_divider"
+            ohos:width="1px"
+            ohos:background_element="$graphic:shape_exit_dialog_divider"
+            ohos:layout_alignment="vertical_center"/>
+
+        <Text
+            ohos:id="$+id:tv_discard"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:text="$string:exit_discard"
+            ohos:text_alignment="center"
+            ohos:text_color="$color:exit_dialog_text"
+            ohos:text_size="$float:size_exit_dialog_option"
+            ohos:text_weight="500"
+            ohos:weight="1"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

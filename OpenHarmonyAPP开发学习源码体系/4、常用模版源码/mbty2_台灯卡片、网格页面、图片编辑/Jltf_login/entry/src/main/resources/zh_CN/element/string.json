@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "登录页"
+    },
+    {
+      "name": "mail",
+      "value": "邮箱"
+    },
+    {
+      "name": "invalid_mail",
+      "value": "无效邮箱"
+    },
+    {
+      "name": "password",
+      "value": "密码"
+    },
+    {
+      "name": "invalid_length_password",
+      "value": "无效密码长度"
+    },
+    {
+      "name": "login",
+      "value": "登录"
+    },
+    {
+      "name": "help",
+      "value": "帮助"
+    },
+    {
+      "name": "privateText",
+      "value": "隐私申明"
+    },
+    {
+      "name": "clickedHelp",
+      "value": "你点击了 帮助"
+    },
+    {
+      "name": "clickedPrivate",
+      "value": "你点击了 隐私申明"
+    },
+    {
+      "name": "success",
+      "value": "成功"
+    },
+    {
+      "name": "loginSuccess",
+      "value": "登录成功"
+    },
+    {
+      "name": "fail",
+      "value": "失败"
+    },
+    {
+      "name": "loginFail",
+      "value": "用户名或密码错误"
+    }
+  ]
+}

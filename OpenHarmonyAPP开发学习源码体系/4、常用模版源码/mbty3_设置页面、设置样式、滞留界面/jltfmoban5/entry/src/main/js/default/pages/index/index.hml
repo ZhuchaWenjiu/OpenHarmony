@@ -1,0 +1,53 @@
+<element name='control' src='../../../../../../node_modules/ailife-view/control/control.hml'></element>
+<element name='dialogbox' src='../../../../../../node_modules/ailife-view/dialog/dialogbox/dialogbox.hml'></element>
+<element name="customdisplay" src="../../../../../../node_modules/ailife-view/customdisplay/customdisplay.hml">
+</element>
+
+<div class="container" style="background-color : {{ backgroundColor }};">
+    <div class="title">
+        <image class="title-back-image" src="/common/ic_back.png" onclick="backClick()"/>
+        <text class="title-text">{{ deviceName }}</text>
+        <image class="title-more-image" src="/common/ic_more.png" onclick="moreClick()"/>
+    </div>
+    <div class="error-location">
+        <div if="{{ showErrorMessage }}" class="error-container">
+            <image class="error-image" src="/common/ic_error.png"/>
+            <text class="error-text">{{ errorMessage }}</text>
+        </div>
+    </div>
+    <div class="device-info">
+        <image class="device-image" src="{{ imageSrc }}"/>
+        <div if="{{ ! showMessage }}" class="center-container">
+            <image class="device-logo" src="{{ logoSrc }}"></image>
+        </div>
+        <div if="{{ showMessage }}" class="center-container">
+            <image class="device-logo-message" src="{{ logoSrc }}"></image>
+            <div class="message">
+                <progress type="circular" class="progress"></progress>
+                <text class="message-text">{{ message }}</text>
+            </div>
+        </div>
+    </div>
+    <control control-data="{{ controlData }}"></control>
+    <div if="{{ showSpread }}" class="spread" onclick="spreadClick()">
+        <text class="spread-text">{{ spreadText }}</text>
+        <image class="spread-image" src="{{ spreadIcon }}"/>
+    </div>
+    <customdisplay custom-display-item-list="{{ customDisplayItemList }}" @icon-click="customDisplayClick()">
+    </customdisplay>
+    <dialog id="dialog" class="dialog" oncancel="dialogCancel()">
+        <dialogbox dialog-box-data="{{ dialog }}" @submit-click="dialogSubmit()"
+                   @submit-server-click="dialogSubmitServer"
+                   @cancel-click="dialogCancel()">
+        </dialogbox>
+    </dialog>
+    <dialog id="hiLinkDialog" class="hi-link-dialog">
+        <div class="dialog-container">
+            <text class="dialog-title">{{ $t('strings.prompt') }}</text>
+            <text class="font-16">{{ $t('strings.useHiLink') }}</text>
+            <text class="font-16 url-text" onclick="urlClick()">{{ $t('strings.hiLinkUrl') }}</text>
+            <button type="text" value="{{ $t('strings.cancel') }}" class="cancel-button" onclick="cancelClick()">
+            </button>
+        </div>
+    </dialog>
+</div>
