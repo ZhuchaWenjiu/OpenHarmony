@@ -1,0 +1,14 @@
+<!-- xxx.hml -->
+<div class="div-button">
+    <text>胶囊按钮</text>
+    <button class="button" type="capsule" value="Capsule button"></button>
+    <text>圆形按钮</text>
+    <button class="button circle" type="circle" icon="/image/jiahao.jpeg"></button>
+    <text>文本按钮</text>
+    <button class="button text" type="text">Text button</button>
+    <text>下载按钮</text>
+    <button class="button download" type="download" id="download-btn"
+            onclick="setProgress">{{downloadText}}</button>
+    <text>加载按钮</text>
+    <button class="button" type="capsule" waiting="true">Loading</button>
+</div>

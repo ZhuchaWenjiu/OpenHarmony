@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "LoginPage"
+    },
+    {
+      "name": "mail",
+      "value": "mail"
+    },
+    {
+      "name": "invalid_mail",
+      "value": "Invalid mail"
+    },
+    {
+      "name": "password",
+      "value": "Password"
+    },
+    {
+      "name": "invalid_length_password",
+      "value": "Invalid length password"
+    },
+    {
+      "name": "login",
+      "value": "Login"
+    },
+    {
+      "name": "help",
+      "value": "Help"
+    },
+    {
+      "name": "privateText",
+      "value": "Private"
+    },
+    {
+      "name": "clickedHelp",
+      "value": "You clicked Help"
+    },
+    {
+      "name": "clickedPrivate",
+      "value": "You clicked Private"
+    },
+    {
+      "name": "success",
+      "value": "SUCCESS"
+    },
+    {
+      "name": "loginSuccess",
+      "value": "Login Success"
+    },
+    {
+      "name": "fail",
+      "value": "FAIL"
+    },
+    {
+      "name": "loginFail",
+      "value": "Error mail or password"
+    }
+  ]
+}

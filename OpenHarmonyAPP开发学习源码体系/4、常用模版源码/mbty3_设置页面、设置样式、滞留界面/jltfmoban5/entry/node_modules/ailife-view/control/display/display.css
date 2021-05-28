@@ -1,0 +1,40 @@
+.display {
+    width: 100%;
+    height: 96px;
+    border-radius: 16px;
+    margin: 4px;
+}
+
+.divider {
+    height: 42px;
+    border-color: #000000;
+    opacity: 0.2;
+    border-width: 0.3px;
+}
+
+.item-container {
+    flex-direction: row;
+}
+
+.left-item {
+    margin-left: 16px;
+}
+
+.center-item {
+    display: grid;
+    justify-content: center;
+}
+
+.right-item {
+    margin-right: 16px;
+}
+
+.divide-container {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+
+.divide-item {
+    flex: 1;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:default_doubleLineList"
+    ohos:height="$float:height_doubleLineList"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:id="$+id:doubleLineList"
+        ohos:height="$float:height_doubleLineList_text"
+        ohos:width="match_parent"
+        ohos:bottom_margin="$float:bottomMargin_doubleLineList"
+        ohos:orientation="horizontal"
+        ohos:top_margin="$float:topMargin_doubleLineList">
+
+        <DirectionalLayout
+            ohos:id="$+id:doubleLineList_text"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:alignment="vertical_center"
+            ohos:orientation="vertical"
+            ohos:weight="2">
+            <DirectionalLayout
+                ohos:id="$+id:doubleLineList_text_layout"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:layout_direction="locale">
+                <Text
+                    ohos:id="$+id:doubleLineList_text_primary"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:bottom_margin="$float:bottomMargin_doubleLineList"
+                    ohos:layout_direction="locale"
+                    ohos:text_color="$color:color_doubleLineList_primary_text"
+                    ohos:text_size="$float:textSize_primaryText"/>
+
+                <Text
+                    ohos:id="$+id:doubleLineList_text_secondary"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:layout_direction="locale"
+                    ohos:text_color="$color:color_doubleLineList_secondary_text"
+                    ohos:text_size="$float:textSize_secondaryText"/>
+            </DirectionalLayout>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:doubleLineList_right"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:alignment="vertical_center|right"
+            ohos:orientation="horizontal"
+            ohos:right_of="$+id:doubleLineList_text"
+            ohos:weight="1">
+
+            <DirectionalLayout
+                ohos:id="$+id:doubleLineList_right_touchTarget1"
+                ohos:height="$float:height_touchTarget"
+                ohos:width="$float:width_touchTarget"
+                ohos:alignment="center">
+                <Image
+                    ohos:id="$+id:doubleLineList_right_img1"
+                    ohos:height="$float:height_doubleLineList_button"
+                    ohos:width="$float:width_doubleLineList_button"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:id="$+id:doubleLineList_right_touchTarget2"
+                ohos:height="$float:height_touchTarget"
+                ohos:width="$float:width_touchTarget"
+                ohos:alignment="center">
+
+                <Image
+                    ohos:id="$+id:doubleLineList_right_img2"
+                    ohos:height="$float:height_doubleLineList_button"
+                    ohos:width="$float:width_doubleLineList_button"/>
+            </DirectionalLayout>
+        </DirectionalLayout>
+    </DirectionalLayout>
+    <Image
+        ohos:id="$+id:divider"
+        ohos:height="$float:height_divider"
+        ohos:width="match_parent"
+        ohos:image_src="$graphic:divider"/>
+</DirectionalLayout>

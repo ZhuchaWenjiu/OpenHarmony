@@ -1,0 +1,20 @@
+<element name="item" src="../item/item.hml"></element>
+<div class="reverse-container" for="reversalData">
+    <div if="{{ reversalData[$idx].heightType == 'high' }}" class="high-reverse-bar"
+         style="backgroundColor : {{ reversalData[$idx].backgroundColor }}; opacity : {{ reversalData[$idx].alpha }};">
+        <div if="{{ reversalData[$idx].leftItem != null }}" class="high-left-item">
+            <item itemdata="{{ reversalData[$idx].leftItem }}"></item>
+        </div>
+        <div if="{{ reversalData[$idx].centerItem != null }}" class="high-center">
+            <item itemdata="{{ reversalData[$idx].centerItem }}"></item>
+        </div>
+        <image src="{{ reversalData[$idx].rightIcon }}" class="high-icon" onclick="reverseIconClick({{ $idx }})"/>
+    </div>
+    <div if="{{ reversalData[$idx].heightType == 'low' }}" class="low-reverse-bar"
+         style="backgroundColor : {{ reversalData[$idx].backgroundColor }}; opacity : {{ reversalData[$idx].alpha }};">
+        <div if="{{ reversalData[$idx].leftItem != null }}" class="low-left-item">
+            <item itemdata="{{ reversalData[$idx].leftItem }}"></item>
+        </div>
+        <image src="{{ reversalData[$idx].rightIcon }}" class="low-icon" onclick="reverseIconClick({{ $idx }})"/>
+    </div>
+</div>

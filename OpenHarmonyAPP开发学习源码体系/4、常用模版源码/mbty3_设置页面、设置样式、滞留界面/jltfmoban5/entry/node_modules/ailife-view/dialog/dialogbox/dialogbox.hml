@@ -1,0 +1,24 @@
+<element name="radiolist" src="../radiolist/radiolist.hml"></element>
+<element name="enumlist" src="../enumlist/enumlist.hml"></element>
+<element name="pickers" src="../picker/picker.hml"></element>
+<element name="info" src="../info/info.hml"></element>
+
+<div class="dialog-box" style="background-color : {{ dialogBoxData.backgroundColor }};">
+    <div>
+        <text class="title font-65ST">{{ dialogBoxData.name }}</text>
+    </div>
+    <div class="dialog-container">
+        <pickers if="{{ dialogBoxData.type == 'PICKER' }}" picker-data="{{ dialogBoxData }}"></pickers>
+        <enumlist if="{{ dialogBoxData.type == 'ENUM' }}" enum-list-data="{{ dialogBoxData }}"></enumlist>
+        <radiolist if="{{ dialogBoxData.type == 'RADIO' }}" radio-list-data="{{ dialogBoxData }}"></radiolist>
+        <info if="{{ dialogBoxData.type == 'INFO' }}" info-data="{{ dialogBoxData }}"></info>
+    </div>
+    <div if="{{ dialogBoxData.centerControlName != null }}" class="control-container">
+        <text class="center-control-text font-65ST" onclick="centerClick()">{{ dialogBoxData.centerControlName }}</text>
+    </div>
+    <div if="{{ dialogBoxData.centerControlName == null }}" class="control-container">
+        <text class="left-control-text font-65ST" onclick="leftClick()">{{ dialogBoxData.leftControlName }}</text>
+        <div class="divider"></div>
+        <text class="right-control-text font-65ST" onclick="rightClick()">{{ dialogBoxData.rightControlName }}</text>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+.container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.title-text {
+    margin: 20px;
+    font-size: 42px;
+}

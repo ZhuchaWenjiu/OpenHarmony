@@ -1,0 +1,18 @@
+<div class="container">
+    <picker-view if="{{ pickerData.pickerType == 'text' }}" type="text" range="{{ pickerData.range }}"
+                 style="color : {{ pickerData.color }};"
+                 indicatorprefix="{{ pickerData.indicatorprefix }}" indicatorsuffix="{{ pickerData.indicatorsuffix }}"
+                 onchange="valueChange()"></picker-view>
+    <picker-view if="{{ pickerData.pickerType == 'time' }}" type="time" style="color : {{ pickerData.color }};"
+                 containsecond="{{ pickerData.containsecond }}" hours="{{ pickerData.hours }}" onchange="valueChange()">
+    </picker-view>
+    <picker-view if="{{ pickerData.pickerType == 'date' }}" type="date" style="color : {{ pickerData.color }};"
+                 start="{{ pickerData.start }}" end="{{ pickerData.end }}" lunar="{{ pickerData.lunar }}"
+                 onchange="valueChange()"></picker-view>
+    <picker-view if="{{ pickerData.pickerType == 'datetime' }}" type="datetime" style="color : {{ pickerData.color }};"
+                 hours="{{ pickerData.hours }}" lunar="{{ pickerData.lunar }}" onchange="valueChange()"></picker-view>
+    <picker-view if="{{ pickerData.pickerType == 'multi-text' }}" type="multi-text"
+                 style="color : {{ pickerData.color }};"
+                 columns="{{ pickerData.columns }}" range="{{ pickerData.range }}" onchange="valueChange()">
+    </picker-view>
+</div>

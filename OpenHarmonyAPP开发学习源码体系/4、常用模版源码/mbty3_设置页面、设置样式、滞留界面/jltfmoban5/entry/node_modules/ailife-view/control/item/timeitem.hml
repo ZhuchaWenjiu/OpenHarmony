@@ -1,0 +1,4 @@
+<div if="{{ itemdata.show }}" class="item-container">
+    <text class="time">{{ itemdata.time }}</text>
+    <text class="desc">{{ itemdata.desc }}</text>
+</div>

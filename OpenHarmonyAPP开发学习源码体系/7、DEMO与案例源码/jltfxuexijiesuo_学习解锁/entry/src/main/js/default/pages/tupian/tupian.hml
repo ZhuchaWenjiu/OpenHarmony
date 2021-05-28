@@ -1,0 +1,7 @@
+<div class="container">
+<!--    <image src="{{image}}" class="tupian">-->
+<!--    -->
+<!--    </image>-->
+<!--    <div><button class="liaojie">了解跟多</button></div>-->
+    <button onclick="button_image" class="liaojie">了解更多</button>
+</div>

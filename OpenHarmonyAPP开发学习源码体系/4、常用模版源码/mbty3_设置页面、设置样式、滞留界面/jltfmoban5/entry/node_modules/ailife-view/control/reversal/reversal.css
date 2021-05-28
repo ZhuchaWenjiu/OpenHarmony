@@ -1,0 +1,57 @@
+.reverse-container {
+    flex-direction: row;
+    display: flex;
+}
+
+.high-reverse-bar {
+    flex-direction: row;
+    border-radius: 16px;
+    margin: 4px;
+    height: 88px;
+    width: 100%;
+}
+
+.high-left-item {
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+}
+
+.high-center {
+    display: grid;
+    justify-content: center;
+}
+
+.high-icon {
+    right: 4px;
+    width: 72px;
+    height: 72px;
+    margin-top: 8px;
+    padding: 0px;
+    position: absolute;
+}
+
+.low-reverse-bar {
+    flex-direction: row;
+    border-radius: 16px;
+    margin: 4px;
+    height: 64px;
+}
+
+.low-left-item {
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 100%;
+    left: 0px;
+}
+
+.low-icon {
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    margin-top: 16px;
+    padding: 4px;
+    position: absolute;
+}

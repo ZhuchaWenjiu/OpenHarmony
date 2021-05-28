@@ -1,0 +1,112 @@
+{
+  "float": [
+    {
+      "name": "title_layout_height",
+      "value": "112vp"
+    },
+    {
+      "name": "title_text_background_height",
+      "value": "41vp"
+    },
+    {
+      "name": "title_text_size",
+      "value": "30fp"
+    },
+    {
+      "name": "title_text_left_padding",
+      "value": "24vp"
+    },
+    {
+      "name": "title_text_top_padding",
+      "value": "7vp"
+    },
+    {
+      "name": "title_text_bottom_padding",
+      "value": "8vp"
+    },
+    {
+      "name": "title_text_bottom_margin",
+      "value": "4vp"
+    },
+    {
+      "name": "head_button_layout_height",
+      "value": "56vp"
+    },
+    {
+      "name": "head_button_layout_right_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "head_button_left_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "head_button_right_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "head_button_image_height",
+      "value": "24vp"
+    },
+    {
+      "name": "head_button_image_width",
+      "value": "24vp"
+    },
+    {
+      "name": "list_layout_left_margin",
+      "value": "26vp"
+    },
+    {
+      "name": "list_layout_right_margin",
+      "value": "24vp"
+    },
+    {
+      "name": "list_layout_bottom_margin",
+      "value": "56vp"
+    },
+    {
+      "name": "bottom_bar_height",
+      "value": "56vp"
+    },
+    {
+      "name": "bottom_item_text_size",
+      "value": "10fp"
+    },
+    {
+      "name": "list_item_height",
+      "value": "64vp"
+    },
+    {
+      "name": "list_item_top_padding",
+      "value": "4vp"
+    },
+    {
+      "name": "list_item_bottom_padding",
+      "value": "4vp"
+    },
+    {
+      "name": "list_item_profile_picture_right_margin",
+      "value": "16vp"
+    },
+    {
+      "name": "list_item_double_line_bottom_margin",
+      "value": "8vp"
+    },
+    {
+      "name": "list_item_main_text_size",
+      "value": "16fp"
+    },
+    {
+      "name": "list_item_aux_text_size",
+      "value": "14fp"
+    },
+    {
+      "name": "list_item_right_text_size",
+      "value": "14fp"
+    },
+    {
+      "name": "list_item_divider_height",
+      "value": "1vp"
+    }
+  ]
+}

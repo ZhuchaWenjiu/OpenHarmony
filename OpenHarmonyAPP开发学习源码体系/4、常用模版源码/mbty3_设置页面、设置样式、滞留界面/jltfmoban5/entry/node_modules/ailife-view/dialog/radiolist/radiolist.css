@@ -1,0 +1,23 @@
+.container {
+    flex-direction: column;
+}
+
+.list-item {
+    flex-direction: row;
+    height: 48px;
+    border-bottom-color: darkgray;
+    border-bottom-width: 0.5px;
+}
+
+.item-name {
+    font-size: 16px;
+    height: 48px;
+    opacity: 0.9;
+}
+
+.item-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: -14px;
+}

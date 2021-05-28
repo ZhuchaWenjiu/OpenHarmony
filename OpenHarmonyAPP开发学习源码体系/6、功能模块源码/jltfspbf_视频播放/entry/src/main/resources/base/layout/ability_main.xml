@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Button
+       ohos:id="$+id:jltf_btn"
+       ohos:width="match_content"
+       ohos:height="match_content"
+       ohos:text="优美环境"
+       ohos:text_size="30fp"
+       ohos:left_margin="45px"
+       ohos:top_margin="40px"
+       ohos:layout_alignment="vertical_center"
+        />
+    <Image
+        ohos:id="$+id:jltf_image1"
+        ohos:width="963px"
+        ohos:height="547px"
+        ohos:top_margin="40px"
+        ohos:left_margin="45px"
+        ohos:image_src="$media:image2"/>
+    <Button
+        ohos:id="$+id:jltf_btn1"
+        ohos:width="match_content"
+        ohos:height="match_content"
+        ohos:text="激情工作"
+        ohos:text_size="30fp"
+        ohos:left_margin="45px"
+        ohos:top_margin="150px"
+        ohos:layout_alignment="vertical_center"
+        />
+    <Image
+        ohos:id="$+id:jltf_image2"
+        ohos:width="963px"
+        ohos:height="547px"
+        ohos:top_margin="70px"
+        ohos:left_margin="45px"
+        ohos:image_src="$media:image1"/>
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:jltf_btn3"
+            ohos:width="match_content"
+            ohos:height="match_content"
+            ohos:text="更多"
+            ohos:text_size="30fp"
+            ohos:left_margin="50px"
+            ohos:top_margin="200px"/>
+        <Button
+            ohos:id="$+id:jltf_btn4"
+            ohos:width="match_content"
+            ohos:height="match_content"
+            ohos:text="上传"
+            ohos:text_size="30fp"
+            ohos:top_margin="200px"
+            ohos:left_margin="550px"
+            />
+
+    </DirectionalLayout>
+</DirectionalLayout>

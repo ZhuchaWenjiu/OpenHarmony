@@ -1,0 +1,17 @@
+<div class="box">
+<div class="harder">
+    <text class="title">
+        {{title}}
+    </text>
+</div>
+    <div class="center">
+        <div for="{{neirong}}" class="block">
+            <div class="text_box">
+                <text class="boxtxt">{{$item}}</text>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <text class="button_style" onclick="page_two">{{know}}</text>
+    </div>
+</div>

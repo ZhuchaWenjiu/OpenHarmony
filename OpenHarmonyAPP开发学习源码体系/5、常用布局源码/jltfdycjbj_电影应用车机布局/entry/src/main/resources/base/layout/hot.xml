@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+<!--    导航栏-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal"
+        >
+
+        <Button
+            ohos:id="$+id:reMen"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="热门"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+
+            />
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="|"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+            />
+        <Button
+            ohos:id="$+id:zuiXin"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="最新"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+
+            />
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="|"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+            />
+        <Button
+            ohos:id="$+id:zhuanTi"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="专题"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+
+            />
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="|"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+            />
+        <Button
+            ohos:id="$+id:table"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="一周追剧表"
+            ohos:text_size="50px"
+            ohos:left_margin="130px"
+
+            />
+
+
+    </DirectionalLayout>
+<!--    搜索栏-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
+        <TextField
+            ohos:height="100px"
+            ohos:width="800px"
+            ohos:text_size="60px"
+            ohos:left_margin="150px"
+            ohos:background_element="$graphic:background_ability_main"
+            ohos:focus_border_radius="50px"
+            ohos:top_margin="50px"
+            />
+        <Button
+            ohos:height="100px"
+            ohos:width="500px"
+            ohos:background_element="$graphic:background_ability_main"
+            ohos:text="搜索"
+            ohos:text_size="60px"
+            ohos:top_margin="50px"
+            ohos:left_margin="150px"
+            />
+    </DirectionalLayout>
+<!--    影视图片-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_content">
+        <Image
+            ohos:height="match_content"
+            ohos:width="1700px"
+            ohos:image_src="$media:img4.jpg"
+            ohos:top_margin="50px"
+            />
+    </DirectionalLayout>
+
+</DirectionalLayout>

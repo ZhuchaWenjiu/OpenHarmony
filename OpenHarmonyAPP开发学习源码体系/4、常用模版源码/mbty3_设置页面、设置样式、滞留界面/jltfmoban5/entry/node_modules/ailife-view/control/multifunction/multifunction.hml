@@ -1,0 +1,22 @@
+<element name="item" src="../item/item.hml"></element>
+<element name="timeitem" src="../item/timeitem.hml"></element>
+
+<div class="multifunction-bar"
+     style="opacity : {{ multifunctionData.alpha }}; background-color : {{ multifunctionData.backgroundColor }};">
+    <div class="item-one">
+        <item itemdata="{{ multifunctionData.itemOne }}"></item>
+    </div>
+    <div class="item-two">
+        <timeitem itemdata="{{ multifunctionData.itemTwo }}"></timeitem>
+    </div>
+    <div if="{{ multifunctionData.commandSize == 1 }}" class="one-command">
+        <image onclick="commandClick({{ multifunctionData.commandOne }})" class="big-icon"
+               src="{{ multifunctionData.commandOne.icon }}"/>
+    </div>
+    <div if="{{ multifunctionData.commandSize == 2 }}" class="two-command">
+        <image onclick="commandClick({{ multifunctionData.commandOne }})" class="small-icon"
+               src="{{ multifunctionData.commandOne.icon }}"/>
+        <image onclick="commandClick({{ multifunctionData.commandTwo }})" class="small-icon"
+               src="{{ multifunctionData.commandTwo.icon }}"/>
+    </div>
+</div>

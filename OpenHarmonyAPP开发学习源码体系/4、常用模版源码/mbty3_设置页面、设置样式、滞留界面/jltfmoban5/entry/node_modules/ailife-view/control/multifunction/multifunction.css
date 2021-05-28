@@ -1,0 +1,41 @@
+.multifunction-bar {
+    margin: 4px;
+    height: 88px;
+    flex-direction: row;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.item-one {
+    margin-left: 16px;
+    position: absolute;
+}
+
+.item-two {
+    width: 100%;
+}
+
+.one-command {
+    position: absolute;
+    right: 0px;
+    margin-right: 4px;
+}
+
+.two-command {
+    flex-direction: row;
+    position: absolute;
+    right: 0px;
+    margin-right: 8px;
+}
+
+.big-icon {
+    width: 72px;
+    height: 72px;
+    margin-top: 8px;
+}
+
+.small-icon {
+    width: 52px;
+    height: 56px;
+    margin-top: 16px;
+}

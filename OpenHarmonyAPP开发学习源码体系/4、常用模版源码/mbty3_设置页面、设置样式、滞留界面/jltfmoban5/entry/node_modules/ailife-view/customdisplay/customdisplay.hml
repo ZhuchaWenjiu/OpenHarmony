@@ -1,0 +1,11 @@
+<div class="container" for="{{ customDisplayItemList }}">
+    <text class="title">{{ customDisplayItemList[$idx].title }}</text>
+    <div class="item-container">
+        <div class="item-width" for="{{ customDisplayItemList[$idx].itemList }}">
+            <div class="item">
+                <text class="text">{{ $item.text }}</text>
+                <image class="icon" src="{{ $item.icon }}" onclick="iconClick({{ $item }})"/>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:left_padding="15vp"
+    ohos:top_padding="20vp">
+
+
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_margin="100px">
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="18fp"
+            ohos:text="一、单选"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="18fp"
+            ohos:text="1.白日依山尽，黄河入海流。"/>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="20fp"
+                ohos:left_margin="40px"
+                ohos:text="下句是：(单选)"/>
+
+            <Text
+                ohos:id="$+id:text_answer1"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:left_margin="20vp"
+                ohos:text_size="20fp"
+                ohos:text_color="#FF3333"
+                ohos:text="[]" />
+        </DirectionalLayout>
+
+
+    </DirectionalLayout>
+
+    <Checkbox
+        ohos:id="$+id:check_box_11"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="A. 欲穷千里目，更上一层楼。"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+    <Checkbox
+        ohos:id="$+id:check_box_22"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="B. 举头望明月，低头思故乡。"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="18fp"
+            ohos:top_margin="20px"
+            ohos:text="2.慈母手中线，游子身上衣。"/>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="18fp"
+                ohos:left_margin="40px"
+                ohos:text="下句是：(单选)"/>
+
+            <Text
+                ohos:id="$+id:text_answer"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:left_margin="20vp"
+                ohos:text_size="20fp"
+                ohos:text_color="#FF3333"
+                ohos:text="[]" />
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <Checkbox
+        ohos:id="$+id:check_box_1"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="A. 谁言寸草心，报得三春晖。"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+    <Checkbox
+        ohos:id="$+id:check_box_2"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="B. 临行密密缝，意恐迟迟归。"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+
+
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:top_margin="100px">
+
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="18fp"
+            ohos:text="3.山不在高，有仙则名。"/>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+            <Text
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="18fp"
+                ohos:left_margin="40px"
+                ohos:text="下句是：(单选)"/>
+
+            <Text
+                ohos:id="$+id:text_answer2"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:left_margin="20vp"
+                ohos:text_size="20fp"
+                ohos:text_color="#FF3333"
+                ohos:text="[]" />
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <Checkbox
+        ohos:id="$+id:check_box1"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="A. 水不在深，有龙则灵。"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+    <Checkbox
+        ohos:id="$+id:check_box2"
+        ohos:top_margin="20vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="B. 斯是陋室，惟吾德馨。"
+        ohos:text_size="20fp"
+        ohos:text_color_on="#FF3333"
+        ohos:text_color_off="#000000"/>
+
+<Button
+    ohos:id="$+id:jltf_button"
+    ohos:height="150px"
+    ohos:width="400px"
+    ohos:text="继续答题"
+    ohos:text_size="22fp"
+    ohos:text_color="white"
+    ohos:background_element="$graphic:jltfoval_button_element"
+    ohos:top_margin="50px"
+    ohos:left_margin="620px"/>
+</DirectionalLayout>
